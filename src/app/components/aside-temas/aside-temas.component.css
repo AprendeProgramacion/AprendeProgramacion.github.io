@@ -1,0 +1,37 @@
+#temas{
+  float: right;
+  border: none;
+  width: 33%;
+}
+#temas li {
+  list-style: none;
+  width: 100%;
+  height: 40px;
+}
+#temas a{
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#temas a:hover{
+  background: #c7eeff;
+  color: #004382;
+  border-top: .5px solid #ccc;
+  border-bottom: .5px solid #ccc;
+}
+#temas span {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  border-top: .5px solid #ccc;
+}
+#temas ul li:nth-child(1) a span{
+  border: none;
+}

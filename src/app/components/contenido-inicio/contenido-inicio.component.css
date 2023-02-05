@@ -1,0 +1,12 @@
+#inicio {
+  border: 2px solid #000;
+  float: left;
+  width: 100%;
+}
+#inicio h3 {
+  font-size: 20px;
+  line-height: 40px;
+}
+#inicio p {
+  font-size: 18px;
+}

@@ -1,0 +1,27 @@
+.fix{
+  clear: both;
+  float: none;
+}
+.center {
+  margin: 0 auto;
+}
+.width-70{
+  width: 70%;
+  height: 100%;
+}
+.margin-top20{
+  margin-top: 20px;
+}
+.tema {
+  border: 2px solid #000;
+  float: left;
+  width: 65%;
+}
+.tema h3 {
+  font-size: 20px;
+  line-height: 40px;
+}
+.tema p {
+  margin-top: 20px;
+  font-size: 18px;
+}
