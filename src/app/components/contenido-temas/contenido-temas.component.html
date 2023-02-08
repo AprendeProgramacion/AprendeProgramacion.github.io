@@ -1,4 +1,10 @@
-<div id="contenido-temas">
-  <router-outlet></router-outlet>
-  <app-aside-temas></app-aside-temas>
+<app-title
+  [nombre]="title"
+></app-title>
+<div class="width-70 center margin-top20">
+  <div>
+    <app-aside-temas></app-aside-temas>
+    <router-outlet></router-outlet>
+  </div>
+  <div class="fix"></div>
 </div>

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contenido-inicio.component.css']
 })
 export class ContenidoInicioComponent {
-
+  title:string = "Aprende Programacion";
 }

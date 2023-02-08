@@ -1,11 +1,30 @@
 <aside id="temas">
-  <ul>
-    <li><a href="#"><span>T1</span></a></li>
-    <li><a href="#"><span>T2</span></a></li>
-    <li><a href="#"><span>T3</span></a></li>
-    <li><a href="#"><span>T4</span></a></li>
-    <li><a href="#"><span>T5</span></a></li>
-    <li><a href="#"><span>T6</span></a></li>
-
-  </ul>
+  <section id="basics">
+    <button class="titulo-tema" (click)="toggleBasics()">Basico</button>
+    <ul [class]="basicsClass">
+      <li><a href="#"><span>¿Que es la programacion?</span></a></li>
+      <li><a href="#"><span>Tipos de lenguajes</span></a></li>
+      <li><a href="#"><span>Editores de codigo - IDE</span></a></li>
+      <li><a href="#"><span>Salida estandar</span></a></li>
+      <li><a href="#"><span>variables</span></a></li>
+      <li><a href="#"><span>entrada estandar</span></a></li>
+      <li><a href="#"><span>operadores aritmeticos</span></a></li>
+      <li><a href="#"><span>operadores logicos</span></a></li>
+      <li><a href="#"><span>condicionales</span></a></li>
+      <li><a href="#"><span>Arreglos y matrices</span></a></li>
+      <li><a href="#"><span>ciclos while</span></a></li>
+      <li><a href="#"><span>ciclos for</span></a></li>
+      <li><a href="#"><span>funciones y procedimientos</span></a></li>
+      <li><a href="#"><span>librerias</span></a></li>
+    </ul>
+  </section>
+  <section id="tecnicas">
+    <button class="titulo-tema" id="btn2" (click)="toggleTech()">Tecnicas</button>
+    <ul [class]="techClass">
+      <li><a href="#"><span>Arreglos</span></a></li>
+      <li><a href="#"><span>Fuerza bruta</span></a></li>
+      <li><a href="#"><span>Recursividad</span></a></li>
+      <li><a href="#"><span>Dividir</span></a></li>
+    </ul>
+  </section>
 </aside>

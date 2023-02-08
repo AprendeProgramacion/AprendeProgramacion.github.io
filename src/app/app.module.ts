@@ -11,6 +11,8 @@ import { VariablesComponent } from './components/temas/variables/variables.compo
 import { routing, appRoutingProviders } from './app.routing';
 import { ContenidoTemasComponent } from './components/contenido-temas/contenido-temas.component';
 import { InicioTemasComponent } from './components/temas/inicio-temas/inicio-temas.component';
+import { AboutComponent } from './components/about/about.component';
+import { ErrorComponent } from './components/extra/error/error.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { InicioTemasComponent } from './components/temas/inicio-temas/inicio-tem
     FooterComponent,
     VariablesComponent,
     ContenidoTemasComponent,
-    InicioTemasComponent
+    InicioTemasComponent,
+    AboutComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+#error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #bbb; */
+}
+
+.items{
+  margin: 30px;
+  text-align: center;
+}
+
+#error h1{
+  font-size: 60px;
+  color: #14cc60;
+  text-shadow: 5px 5px 8px #666;
+  font-weight: bold;
+}
+
+#error div{
+  width: 100%;
+  background-color: #0a2e36;
+  color: white;
+  margin-top: 50px;
+}
+

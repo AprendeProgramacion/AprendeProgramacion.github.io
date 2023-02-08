@@ -1,7 +1,11 @@
 #header {
   width: 100%;
   height: 120px;
-  border: 2px solid #000;
+  border-top: 5px solid #036d19;
+}
+#header a{
+  text-decoration: none;
+  color: #000;
 }
 #logo {
   float: left;
@@ -11,11 +15,14 @@
   height: 100%;
 }
 #logo img {
-  height: 60px;
+  height: 40px;
 }
 #logo span {
   margin-left: 10px;
   font-size: 20px;
+}
+#logo strong{
+  color: #036d19;
 }
 #menu {
   float: right;
@@ -44,10 +51,62 @@
   align-items: center;
   text-decoration: none;
   color: #000;
+  animation: encoger .1s linear;
+  font-size: 16px;
+}
+@keyframes encoger{
+  0%{
+    font-size: 20px;
+  }
+  100%{
+    font-size: 16px;
+  }
 }
 
 #menu a:hover{
-  color: #004382;
-  border-left: .5px solid #ccc;
-  border-right: .5px solid #ccc;
+  color: #036d19;
+  border-bottom: 3px solid #036d19;
+  animation: expandir .1s linear;
+  font-size: 20px;
+}
+@keyframes expandir{
+  0%{
+    font-size: 16px;
+  }
+  100%{
+    font-size: 20px;
+  }
+}
+
+/*Corte1*/
+@media (max-width: 1003px) {
+  #header {
+    height: 120px;
+  }
+  #logo {
+    justify-content: center;
+  }
+  #logo, #menu {
+    height: 50%;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+/*Corte2*/
+@media (max-width: 400px) {
+  #header {
+    height: 100px;
+  }
+  #logo img {
+    height: 30px;
+  }
+  #logo span{
+    font-size: 17px;
+  }
+  #logo, #menu {
+    height: 50%;
+    float: none;
+    margin: 0 auto;
+  }
 }

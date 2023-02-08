@@ -1,14 +1,16 @@
 <header id="header">
   <div class="center width-70">
-    <div id="logo">
-      <img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" alt="logo">
-      <span class="logo-text">Aprende<strong>Programación</strong></span>
-    </div>
+    <a [routerLink]="['/']">
+      <div id="logo">
+        <img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" alt="logo">
+        <span class="logo-text">Aprende<strong>Programación</strong></span>
+      </div>
+    </a>
     <nav id="menu">
       <ul>
         <li><a [routerLink]="['/']">Inicio</a></li>
         <li><a [routerLink]="['/temas']">Temas</a></li>
-        <li><a [routerLink]="['/']">Acerca de</a></li>
+        <li><a [routerLink]="['/about']">Acerca de</a></li>
       </ul>
     </nav>
   </div>

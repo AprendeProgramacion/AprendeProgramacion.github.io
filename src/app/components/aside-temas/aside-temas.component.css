@@ -3,6 +3,32 @@
   border: none;
   width: 33%;
 }
+.show {
+  overflow: hidden;
+  animation: mostrar normal .2s linear;
+  height: auto;
+}
+@keyframes mostrar{
+  from{
+    height: 0;
+  }
+  to{
+    height: 500px;
+  }
+}
+.hide {
+  overflow: hidden;
+  animation: ocultar normal .2s linear;
+  height: 0;
+}
+@keyframes ocultar{
+  from{
+    height: 500px;
+  }
+  to{
+    height: 0;
+  }
+}
 #temas li {
   list-style: none;
   width: 100%;
@@ -15,23 +41,65 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 0;
 }
 #temas a:hover{
-  background: #c7eeff;
-  color: #004382;
-  border-top: .5px solid #ccc;
-  border-bottom: .5px solid #ccc;
+  background: #eee;
+  border-left: 5px solid #036d19;
 }
 #temas span {
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   width: 90%;
   height: 100%;
-  border-top: .5px solid #ccc;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0 20px;
+  border-left: .5px solid #ccc;
+  animation: disminuir .1s linear;
 }
-#temas ul li:nth-child(1) a span{
-  border: none;
+#temas a:hover span{
+  margin-left: 15px;
+  padding-left: 30px;
+  animation: aumentar .2s linear;
 }
+@keyframes aumentar{
+  from{
+    padding-left: 20px;
+  }
+  to{
+    padding-left: 30px;
+  }
+}
+@keyframes disminuir{
+  from{
+    padding-left: 30px;
+  }
+  to{
+    padding-left: 20px;
+  }
+}
+
+.titulo-tema{
+  border: none !important;
+  border-top: 1px solid #ccc !important;
+  background: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100% !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 20px;
+}
+
+@media (max-width: 700px) {
+  #temas{
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+

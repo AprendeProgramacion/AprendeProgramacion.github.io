@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./contenido-temas.component.css']
 })
 export class ContenidoTemasComponent {
+  title:string = "Temas"
   constructor(){}
 }
