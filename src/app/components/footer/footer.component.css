@@ -75,7 +75,15 @@
   background-color: #999;
   margin: 20px 0;
 }
-
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 15px;
+}
+.info span{
+  margin: 15px 0;
+}
 
 @media(max-width: 768px) {
   .part:nth-child(1){
