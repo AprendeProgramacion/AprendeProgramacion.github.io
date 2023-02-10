@@ -18,6 +18,15 @@
   width: 65%;
   padding: 0 20px;
 }
+.tema .keyword {
+  text-decoration: none;
+  color: #09a129;
+}
+.tema .keyword:hover {
+  text-decoration: underline;
+  color: #18a036;
+  font-weight: bold;
+}
 .tema h3 {
   font-size: 20px;
   line-height: 40px;
@@ -46,7 +55,23 @@
   float: left;
   margin: 30px 15px 25px 0;
 }
-
+.cita{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  background: #ccc;
+  border-left: 10px solid #0a2e36;
+  font-style: italic;
+}
+.cita span.autor{
+  font-style: normal;
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: right;
+}
 @media (max-width: 700px) {
   .width-70{
     width: 90%;
