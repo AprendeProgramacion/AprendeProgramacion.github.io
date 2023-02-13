@@ -1,0 +1,4 @@
+.ordered li{
+  list-style: decimal;
+  font-family: monospace;
+}

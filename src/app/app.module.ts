@@ -13,6 +13,25 @@ import { ContenidoTemasComponent } from './components/contenido-temas/contenido-
 import { InicioTemasComponent } from './components/temas/inicio-temas/inicio-temas.component';
 import { AboutComponent } from './components/about/about.component';
 import { ErrorComponent } from './components/extra/error/error.component';
+import { HistoriaComponent } from './components/temas/historia/historia.component';
+import { EspecialidadesComponent } from './components/temas/especialidades/especialidades.component';
+import { DefProgramacionComponent } from './components/temas/def-programacion/def-programacion.component';
+import { TiposLenguajesComponent } from './components/temas/tipos-lenguajes/tipos-lenguajes.component';
+import { EditoresIDESComponent } from './components/temas/editores-ides/editores-ides.component';
+import { OutputComponent } from './components/temas/output/output.component';
+import { InputComponent } from './components/temas/input/input.component';
+import { OpAritComponent } from './components/temas/op-arit/op-arit.component';
+import { ContenidoRetosComponent } from './components/contenido-retos/contenido-retos.component';
+import { AsideRetosComponent } from './components/aside-retos/aside-retos.component';
+import { InicioRetosComponent } from './components/retos/inicio-retos/inicio-retos.component';
+import { Reto1BComponent } from './components/retos/reto1-b/reto1-b.component';
+import { OpLogicComponent } from './components/temas/op-logic/op-logic.component';
+import { CondComponent } from './components/temas/cond/cond.component';
+import { WhileComponent } from './components/temas/while/while.component';
+import { ForComponent } from './components/temas/for/for.component';
+import { FuncProcComponent } from './components/temas/func-proc/func-proc.component';
+import { LibreriasComponent } from './components/temas/librerias/librerias.component';
+import { ArreglosComponent } from './components/temas/arreglos/arreglos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +45,26 @@ import { ErrorComponent } from './components/extra/error/error.component';
     ContenidoTemasComponent,
     InicioTemasComponent,
     AboutComponent,
-    ErrorComponent
+    ErrorComponent,
+    HistoriaComponent,
+    EspecialidadesComponent,
+    DefProgramacionComponent,
+    TiposLenguajesComponent,
+    EditoresIDESComponent,
+    OutputComponent,
+    InputComponent,
+    OpAritComponent,
+    ContenidoRetosComponent,
+    AsideRetosComponent,
+    InicioRetosComponent,
+    Reto1BComponent,
+    OpLogicComponent,
+    CondComponent,
+    WhileComponent,
+    ForComponent,
+    FuncProcComponent,
+    LibreriasComponent,
+    ArreglosComponent
   ],
   imports: [
     BrowserModule,

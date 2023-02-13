@@ -1,30 +1,37 @@
 <aside id="temas">
+  <section id="antes">
+    <button class="titulo-tema" (click)="toggleAntes()">Antes de iniciar</button>
+    <ul [class]="antesClass">
+      <li><a [routerLink]="['/aprende/historia']"><span>Historia</span></a></li>
+      <li><a [routerLink]="['/aprende/enfoques']"><span>Enfoques</span></a></li>
+    </ul>
+  </section>
   <section id="basics">
     <button class="titulo-tema" (click)="toggleBasics()">Basico</button>
     <ul [class]="basicsClass">
-      <li><a [routerLink]="['/temas/a']"><span>¿Que es la programacion?</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Tipos de lenguajes</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Editores de codigo - IDE</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Salida estandar</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>variables</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>entrada estandar</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>operadores aritmeticos</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>operadores logicos</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>condicionales</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Arreglos y matrices</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>ciclos while</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>ciclos for</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>funciones y procedimientos</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>librerias</span></a></li>
+      <li><a [routerLink]="['/aprende/que-es-programacion']"><span>¿Que es la programacion?</span></a></li>
+      <li><a [routerLink]="['/aprende/tipos-de-lenguajes']"><span>Tipos de lenguajes</span></a></li>
+      <li><a [routerLink]="['/aprende/editores-ides']"><span>Editores de codigo - IDE</span></a></li>
+      <li><a [routerLink]="['/aprende/output']"><span>Salida estandar</span></a></li>
+      <li><a [routerLink]="['/aprende/variables']"><span>variables</span></a></li>
+      <li><a [routerLink]="['/aprende/input']"><span>entrada estandar</span></a></li>
+      <li><a [routerLink]="['/aprende/operadores-aritmeticos']"><span>operadores aritmeticos</span></a></li>
+      <li><a [routerLink]="['/aprende/operadores-logicos']"><span>operadores logicos</span></a></li>
+      <li><a [routerLink]="['/aprende/condicionales']"><span>condicionales</span></a></li>
+      <li><a [routerLink]="['/aprende/arreglos-y-matrices']"><span>Arreglos y matrices</span></a></li>
+      <li><a [routerLink]="['/aprende/ciclos-while']"><span>ciclos while</span></a></li>
+      <li><a [routerLink]="['/aprende/ciclos-for']"><span>ciclos for</span></a></li>
+      <li><a [routerLink]="['/aprende/funciones-y-procedimientos']"><span>funciones y procedimientos</span></a></li>
+      <li><a [routerLink]="['/aprende/librerias']"><span>librerias</span></a></li>
     </ul>
   </section>
   <section id="tecnicas">
-    <button class="titulo-tema" id="btn2" (click)="toggleTech()">Tecnicas</button>
+    <button class="titulo-tema" (click)="toggleTech()">Tecnicas</button>
     <ul [class]="techClass">
-      <li><a [routerLink]="['/temas/a']"><span>Arreglos</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Fuerza bruta</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Recursividad</span></a></li>
-      <li><a [routerLink]="['/temas/a']"><span>Dividir</span></a></li>
+      <li><a [routerLink]="['/aprende/a']"><span>Arreglos</span></a></li>
+      <li><a [routerLink]="['/aprende/a']"><span>Fuerza bruta</span></a></li>
+      <li><a [routerLink]="['/aprende/a']"><span>Recursividad</span></a></li>
+      <li><a [routerLink]="['/aprende/a']"><span>Dividir</span></a></li>
     </ul>
   </section>
 </aside>
