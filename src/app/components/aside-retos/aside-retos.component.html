@@ -1,0 +1,37 @@
+<aside id="retos">
+  <section id="basico">
+    <button class="titulo-retos" (click)="toggleBasico()">basico</button>
+    <ul [class]="basicoClass">
+      <li><a [routerLink]="['/retos/historia']"><span>Historia</span></a></li>
+      <li><a [routerLink]="['/retos/enfoques']"><span>Enfoques</span></a></li>
+    </ul>
+  </section>
+  <section id="tecnicas">
+    <button class="titulo-retos" (click)="toggleTecnicas()">tecnicas</button>
+    <ul [class]="tecnicasClass">
+      <li><a [routerLink]="['/retos/que-es-programacion']"><span>¿Que es la programacion?</span></a></li>
+      <li><a [routerLink]="['/retos/tipos-de-lenguajes']"><span>Tipos de lenguajes</span></a></li>
+      <li><a [routerLink]="['/retos/editores-ides']"><span>Editores de codigo - IDE</span></a></li>
+      <li><a [routerLink]="['/retos/output']"><span>Salida estandar</span></a></li>
+      <li><a [routerLink]="['/retos/variables']"><span>variables</span></a></li>
+      <li><a [routerLink]="['/retos/input']"><span>entrada estandar</span></a></li>
+      <li><a [routerLink]="['/retos/operadores-aritmeticos']"><span>operadores aritmeticos</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>operadores logicos</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>condicionales</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>Arreglos y matrices</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>ciclos while</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>ciclos for</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>funciones y procedimientos</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>librerias</span></a></li>
+    </ul>
+  </section>
+  <section id="poo">
+    <button class="titulo-retos" (click)="togglePoo()">poo</button>
+    <ul [class]="pooClass">
+      <li><a [routerLink]="['/retos/a']"><span>Arreglos</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>Fuerza bruta</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>Recursividad</span></a></li>
+      <li><a [routerLink]="['/retos/a']"><span>Dividir</span></a></li>
+    </ul>
+  </section>
+</aside>

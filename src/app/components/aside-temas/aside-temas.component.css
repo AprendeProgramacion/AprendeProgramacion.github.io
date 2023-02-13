@@ -82,6 +82,7 @@
 }
 
 .titulo-tema{
+  cursor: pointer;
   border: none !important;
   border-top: 1px solid #ccc !important;
   background: #fff;
@@ -103,3 +104,4 @@
   }
 }
 
+.titulo-tema:focus{outline: none;}

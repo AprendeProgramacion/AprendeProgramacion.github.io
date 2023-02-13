@@ -6,16 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./aside-temas.component.css']
 })
 export class AsideTemasComponent {
+  antes: boolean;
   basics: boolean;
   tech: boolean;
+  antesClass: string;
   basicsClass: string;
   techClass: string;
 
   constructor() {
+    this.antes = false;
     this.basics = false;
     this.tech = false;
+    this.antesClass = 'hide';
     this.basicsClass = 'hide';
     this.techClass = 'hide';
+  }
+  hideAntes(){
+    this.antes = false;
+    this.antesClass = 'hide';
   }
   hideBasics(){
     this.basics = false;
@@ -25,6 +33,10 @@ export class AsideTemasComponent {
     this.tech = false;
     this.techClass = 'hide';
   }
+  showAntes(){
+    this.antes = true;
+    this.antesClass = 'show';
+  }
   showBasics(){
     this.basics = true;
     this.basicsClass = 'show';
@@ -33,6 +45,16 @@ export class AsideTemasComponent {
     this.tech = true;
     this.techClass ='show';
   }
+  toggleAntes() {
+    if(this.antes){
+      this.hideAntes();
+    }
+    else{
+      this.showAntes();
+    }
+    this.hideBasics();
+    this.hideTech();
+  }
   toggleBasics() {
     if(this.basics){
       this.hideBasics();
@@ -40,6 +62,7 @@ export class AsideTemasComponent {
     else{
       this.showBasics();
     }
+    this.hideAntes();
     this.hideTech();
   }
   toggleTech() {
@@ -49,6 +72,7 @@ export class AsideTemasComponent {
     else{
       this.showTech();
     }
+    this.hideAntes();
     this.hideBasics();
   }
 }

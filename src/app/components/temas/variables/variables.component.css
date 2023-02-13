@@ -1,0 +1,38 @@
+.regla-nombre{
+  background-color: #eee;
+  width: 100%;
+  margin: 2px 0;
+}
+.regla-nombre .regla-button{
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: #0a2e36;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 15px 20px;
+
+}
+.regla-nombre div{
+  padding: 15px 20px;
+}
+.regla-nombre div span{
+  font-family: monospace;
+  font-size: 17px;
+  color: #03771c;
+}
+.regla-nombre div span span.min{
+  color: #cc3a00;
+}
+.regla-nombre div span span.may{
+  color: #004cff;
+
+}
+.regla-nombre div span.correcto{
+  color: green;
+}
+.regla-nombre div span.incorrecto{
+  color: red;
+}

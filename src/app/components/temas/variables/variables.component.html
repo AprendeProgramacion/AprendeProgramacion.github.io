@@ -1,7 +1,67 @@
-<section id="var" class="tema">
+<section class="tema">
   <h3>Variables</h3>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos unde, dolor possimus inventore aspernatur perferendis est vitae tempore. Facilis, inventore eligendi temporibus rem itaque labore ad similique! Veritatis, praesentium rem?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos unde, dolor possimus inventore aspernatur perferendis est vitae tempore. Facilis, inventore eligendi temporibus rem itaque labore ad similique! Veritatis, praesentium rem?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos unde, dolor possimus inventore aspernatur perferendis est vitae tempore. Facilis, inventore eligendi temporibus rem itaque labore ad similique! Veritatis, praesentium rem?</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos unde, dolor possimus inventore aspernatur perferendis est vitae tempore. Facilis, inventore eligendi temporibus rem itaque labore ad similique! Veritatis, praesentium rem?</p>
+  <p>Una variable es un espacio que se reserva en la memoria RAM del dispositivo. Sirve para almacenar datos que permanecen mientras el programa esté ejecutándose para poder acceder a ellos con solo volver a llamar el nombre de la variable.</p>
+  <p>Por ejemplo, si quiero guardar mi nombre, solo tengo que crear una variable llamada <strong>‘nombre’</strong> y posteriormente guardar mi nombre, que en este caso sería ‘Pablo’. De esta manera si quiero que el programa use mi nombre, solo tengo que llamar a la variable ‘nombre’.</p>
+  <div class="code">
+    <img src="assets/img/var_1.png" alt="">
+  </div>
+  <p>Sin embargo, hay algunas reglas que deben seguirse dependiendo de la sintaxis de algunos lenguajes.</p>
+  <br><br>
+  <p><strong>Reglas de tipado:</strong> <br>Existen los lenguajes de tipado fuerte y tipado débil.
+    Los de tipado débil no requieren especificar un tipo de dato para funcionar (Vea la imagen anterior), como es el caso de JavaScript y Python, mientras que los lenguajes como C++ y Java si requieren especificar un tipo de dato.</p>
+  <div class="code">
+    <img src="assets/img/var_2.png" alt="">
+  </div>
+
+  <p>Los tipos de datos primitivos son: <br>
+    <br>
+    int: Entero <br>
+    short: Entero corto <br>
+    long: Entero largo <br>
+    float: Numero real con decimales <br>
+    double: Numero real con decimales <br>
+    string: cadena de texto <br>
+    char: caracter (basado en <a href="https://elcodigoascii.com.ar/" class="keyword" target="_blank">Codigo ASCII</a>) <br>
+    bool: verdadero o falso (1 o 0)</p>
+
+    <p> <strong>Reglas de nombre:</strong> <br>Las variables tambien tienen restricciones en cuanto al nombre.</p>
+    <div class="regla-nombre">
+      <button class="regla-button" (click)="toggleB1()">Unicamente Letras y numeros</button>
+      <div *ngIf="b1">
+        <span class="correcto">nombre1</span> <br>
+        <span class="incorrecto">nombre#1</span>
+      </div>
+    </div>
+    <div class="regla-nombre">
+      <button class="regla-button" (click)="toggleB2()">El nombre de la variable no puede llevar espacios</button>
+      <div *ngIf="b2">
+        <span class="correcto">valor1</span> <br>
+        <span class="incorrecto">valor 1</span>
+      </div>
+    </div>
+    <div class="regla-nombre">
+      <button class="regla-button" (click)="toggleB3()">El único caracter especial permitido es el guion bajo ( _ )</button>
+      <div *ngIf="b3">
+        <span class="correcto">nombre_1</span> <br>
+        <span class="correcto">_nombre1</span>
+      </div>
+    </div>
+    <div class="regla-nombre">
+      <button class="regla-button" (click)="toggleB4()">El primer caracter del nombre de la variable no puede ser un numero</button>
+      <div *ngIf="b4">
+        <span class="correcto">nombre1</span> <br>
+        <span class="correcto">_1nombre</span> <br>
+        <span class="incorrecto">1nombre</span>
+      </div>
+    </div>
+    <div class="regla-nombre">
+      <button class="regla-button" (click)="toggleB5()">Es buena practica nombrar las variables en minuscula con camel case en caso de ser compuesta y las constantes en mayuscula con guiones al piso</button>
+      <div *ngIf="b5">
+        <span>Camel Case:</span> <br>
+        <span><span class="min">primer</span><span class="may">N</span><span class="min">ombre</span></span> <br><br>
+        <span>Constantes:</span><br>
+        <span><span class="min">NUMERO</span><span class="may">_</span><span class="min">PI</span></span>
+      </div>
+    </div>
+
 </section>
