@@ -49,6 +49,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: center;
   text-decoration: none;
   color: #000;
   animation: encoger .1s linear;
@@ -68,6 +69,8 @@
   border-bottom: 3px solid #036d19;
   animation: expandir .1s linear;
   font-size: 20px;
+  transition: all .1s;
+  text-transform: uppercase;
 }
 @keyframes expandir{
   0%{

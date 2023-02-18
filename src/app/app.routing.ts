@@ -43,7 +43,7 @@ const appRoutes:Routes = [
       { path: 'operadores-aritmeticos', component: OpAritComponent },
       { path: 'operadores-logicos', component: OpLogicComponent },
       { path: 'condicionales', component: CondComponent },
-      // { path: 'arreglos-y-matrices', component: ArreglosComponent},
+      { path: 'arreglos-y-matrices', component: ArreglosComponent},
       { path: 'ciclos-while', component: WhileComponent },
       { path: 'ciclos-for', component: ForComponent },
       { path: 'funciones-y-procedimientos', component: FuncProcComponent },
