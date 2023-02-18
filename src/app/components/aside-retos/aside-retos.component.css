@@ -1,7 +1,8 @@
 #retos{
   float: right;
   border: none;
-  width: 33%;
+  width: 30%;
+  box-shadow: 5px 5px 20px #444;
 }
 .show {
   overflow: hidden;
@@ -56,7 +57,7 @@
   font-size: 13px;
   text-transform: uppercase;
   margin: 0 20px;
-  border-left: .5px solid #ccc;
+  border-left: .5px solid #6ee586;
   animation: disminuir .1s linear;
 }
 #retos a:hover span{
@@ -85,7 +86,8 @@
   cursor: pointer;
   border: none !important;
   border-top: 1px solid #ccc !important;
-  background: #fff;
+  background: #036d19;
+  color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: bolder;
