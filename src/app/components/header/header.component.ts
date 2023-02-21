@@ -22,5 +22,22 @@ export class HeaderComponent {
         header.style.boxShadow="0 2px 20px #888";
       }
     })
+    let logo = document.getElementById('menu');
+    let scroll = <number>$(window).scrollTop();
+    let center= document.getElementById('center')
+    $(window).scroll(() => {
+      if(<number>$(window).width()<=1003)
+      if (<number>$(window).scrollTop()>scroll&&logo != null){
+        logo.classList.add("hide-header")
+        logo.classList.remove("show-header")
+        center?.classList.remove("width-70")
+      }
+      else if (<number>$(window).scrollTop()<scroll&&logo != null){
+        logo.classList.add("show-header")
+        logo.classList.remove("hide-header")
+        center?.classList.add("width-70")
+      }
+      scroll=<number>$(window).scrollTop();
+    });
   }
 }
