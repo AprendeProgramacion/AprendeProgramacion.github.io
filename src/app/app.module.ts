@@ -33,6 +33,7 @@ import { ArreglosComponent } from './components/temas/arreglos/arreglos.componen
 import { SumarNumerosVariablesComponent } from './components/retos/basico/l1/sumar-numeros-variables/sumar-numeros-variables.component';
 import { InicioRetosComponent } from './components/retos/inicio-retos/inicio-retos.component';
 import { InicioBasL1Component } from './components/retos/basico/l1/inicio-bas-l1/inicio-bas-l1.component';
+import { SacarModuloComponent } from './components/retos/basico/l1/sacar-modulo/sacar-modulo.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { InicioBasL1Component } from './components/retos/basico/l1/inicio-bas-l1
     ArreglosComponent,
     SumarNumerosVariablesComponent,
     InicioRetosComponent,
-    InicioBasL1Component
+    InicioBasL1Component,
+    SacarModuloComponent
   ],
   imports: [
     BrowserModule,
