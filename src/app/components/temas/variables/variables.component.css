@@ -4,6 +4,7 @@
   margin: 2px 0;
 }
 .regla-nombre .regla-button{
+  cursor: pointer;
   background: none;
   border: none;
   font-weight: bold;

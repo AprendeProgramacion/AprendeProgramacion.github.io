@@ -33,6 +33,11 @@ import { ArreglosComponent } from './components/temas/arreglos/arreglos.componen
 import { SumarNumerosVariablesComponent } from './components/retos/basico/l1/sumar-numeros-variables/sumar-numeros-variables.component';
 import { InicioRetosComponent } from './components/retos/inicio-retos/inicio-retos.component';
 import { InicioBasL1Component } from './components/retos/basico/l1/inicio-bas-l1/inicio-bas-l1.component';
+import { SacarModuloComponent } from './components/retos/basico/l1/sacar-modulo/sacar-modulo.component';
+import { SacarCuadradoComponent } from './components/retos/basico/l1/sacar-cuadrado/sacar-cuadrado.component';
+import { SacarAreaCuadradoComponent } from './components/retos/basico/l1/sacar-area-cuadrado/sacar-area-cuadrado.component';
+import { SacarAreaCilindroComponent } from './components/retos/basico/l1/sacar-area-cilindro/sacar-area-cilindro.component';
+import { SacarHipotenusaComponent } from './components/retos/basico/l1/sacar-hipotenusa/sacar-hipotenusa.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +71,12 @@ import { InicioBasL1Component } from './components/retos/basico/l1/inicio-bas-l1
     ArreglosComponent,
     SumarNumerosVariablesComponent,
     InicioRetosComponent,
-    InicioBasL1Component
+    InicioBasL1Component,
+    SacarModuloComponent,
+    SacarCuadradoComponent,
+    SacarAreaCuadradoComponent,
+    SacarAreaCilindroComponent,
+    SacarHipotenusaComponent
   ],
   imports: [
     BrowserModule,
