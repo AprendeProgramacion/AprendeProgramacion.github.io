@@ -33,10 +33,17 @@
   font-size: 16px;
   animation: encoger .1s linear;
 }
+#footer .img:first-child{
+  margin-bottom: 14px;
+}
+#footer .img:first-child img{
+  margin: 3px 0;
+}
 #footer .img:hover span{
   color: #036d19;
   font-size: 20px;
   animation: expandir .2s linear;
+  font-weight: bold;
 }
 @keyframes expandir{
   0%{

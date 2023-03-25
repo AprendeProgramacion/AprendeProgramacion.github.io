@@ -65,31 +65,32 @@
   animation: encoger .1s linear;
   font-size: 16px;
 }
-@keyframes encoger{
+/* @keyframes encoger{
   0%{
     font-size: 20px;
   }
   100%{
     font-size: 16px;
   }
-}
+} */
 
 #menu a:hover{
   color: #036d19;
   border-bottom: 3px solid #036d19;
   animation: expandir .1s linear;
-  font-size: 20px;
+  /* font-size: 20px; */
   transition: all .1s;
   text-transform: uppercase;
+  font-weight: bold;
 }
-@keyframes expandir{
+/* @keyframes expandir{
   0%{
     font-size: 16px;
   }
   100%{
     font-size: 20px;
   }
-}
+} */
 
 /*Corte1*/
 @media (max-width: 1003px) {
