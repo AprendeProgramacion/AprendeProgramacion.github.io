@@ -1,0 +1,19 @@
+<div class="reto">
+  <div class="content">
+    <div class="title">
+      <h3>Calcular hipotenusa</h3>
+      <button class="btn-cerrar" (click)="close()"><img src="assets/img/icons/close.png" alt=""></button>
+    </div>
+    <hr>
+    <div class="description">
+      <p>Escribir un programa que calcule la hipotenusa de un triangulo rectangulo cuyos catetos son ingresados por el usuario.</p>
+    </div>
+    <button class="solucion" (click)="solution()">SOLUCION</button>
+    <div class="image-complete" *ngIf="sol">
+      <p>En esta solucion, lo mas optimo es importar una libreria que contiene multiples funciones matematicas, las cuales nos sirven para facilitar el trabajo evitando tener que realizar cierta cantidad de operaciones una a una, como lo son la raiz cuadrada y la potencia en este caso.</p>
+      <p>Si quieres saber mas sobre librerias, visita el apartado de <a class="keyword" [routerLink]="['/aprende/librerias']">librerias</a> en nuestra pagina web</p>
+      <br>
+      <img src="assets/img/retos_basico_hipotenusa.png" alt="solucion hipotenusa">
+    </div>
+  </div>
+</div>

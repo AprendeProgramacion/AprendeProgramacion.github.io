@@ -1,4 +1,4 @@
-import { ModuleWithProviders } from "@angular/core";
+import { ModuleWithProviders, NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
 
@@ -17,8 +17,6 @@ import { OutputComponent } from "./components/temas/output/output.component";
 import { InputComponent } from "./components/temas/input/input.component";
 import { OpAritComponent } from "./components/temas/op-arit/op-arit.component";
 import { ContenidoRetosComponent } from "./components/contenido-retos/contenido-retos.component";
-import { InicioRetosComponent } from "./components/retos/inicio-retos/inicio-retos.component";
-import { Reto1BComponent } from "./components/retos/reto1-b/reto1-b.component";
 import { OpLogicComponent } from "./components/temas/op-logic/op-logic.component";
 import { CondComponent } from "./components/temas/cond/cond.component";
 import { WhileComponent } from "./components/temas/while/while.component";
@@ -26,6 +24,9 @@ import { ForComponent } from "./components/temas/for/for.component";
 import { FuncProcComponent } from "./components/temas/func-proc/func-proc.component";
 import { LibreriasComponent } from "./components/temas/librerias/librerias.component";
 import { ArreglosComponent } from "./components/temas/arreglos/arreglos.component";
+import { InicioRetosComponent } from "./components/retos/inicio-retos/inicio-retos.component";
+import { InicioBasL1Component } from "./components/retos/basico/l1/inicio-bas-l1/inicio-bas-l1.component";
+import { InicioBasL2Component } from "./components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -50,13 +51,14 @@ const appRoutes:Routes = [
       { path: 'librerias', component: LibreriasComponent },
       { path: '**', component: ErrorComponent }
     ]},
-    { path: 'retos', component: ErrorComponent/*, children:[
+    { path: 'retos', component: ContenidoRetosComponent, children:[
       { path: '', component: InicioRetosComponent },
-      { path: 'basico-1', component: Reto1BComponent },
+      { path: 'basico/nivel-1', component: InicioBasL1Component },
+      { path: 'basico/nivel-2', component: InicioBasL2Component },
       { path: '**', component: ErrorComponent }
-    ]*/},
+    ]},
     { path: 'about', component: AboutComponent },
-    { path: '**', component: ErrorComponent }
+    { path: '**', component: ErrorComponent },
 ];
 export const appRoutingProviders:any[] = [];
 export const routing = RouterModule.forRoot(appRoutes);

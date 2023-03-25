@@ -35,19 +35,43 @@
   margin-top: 20px;
   font-size: 18px;
 }
-.reto {
+.retos {
   line-height: 30px;
   float: left;
   width: 65%;
   padding: 0 20px;
 }
-.reto h3 {
+.retos h3 {
   font-size: 20px;
   line-height: 40px;
 }
-.reto p {
+.retos p {
   margin-top: 20px;
   font-size: 18px;
+}
+.retos ul{
+  width: 100%;
+}
+.retos ul li{
+  display: block;
+  width: 100%;
+  height: 70px;
+  list-style: none;
+  border-top: .5px solid #aaa;
+}
+.retos ul li:last-child{
+  border-bottom: .5px solid #aaa;
+}
+.retos ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  text-decoration: none;
+}
+.retos ul li a:hover{
+  background-color: #eee;
+  cursor: pointer;
 }
 .video{
   position: relative;
@@ -172,6 +196,81 @@
 .code img{
   width: 100%;
 }
+
+
+.reto{
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.reto .content{
+  background-color: white;
+  width: 70%;
+  height: auto;
+  max-height: 80%;
+  padding: 30px;
+  overflow: auto;
+}
+.reto .content .title{
+  display: flex;
+  height: auto;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.reto .content .title h3{
+  margin-right: auto;
+}
+.reto .btn-cerrar{
+  width: 10%;
+  max-width: 40px;
+  margin-left: auto;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.reto .btn-cerrar img{
+  width: 100%;
+}
+.reto .description{
+  margin-bottom: 20px;
+}
+.reto button.solucion{
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-weight: bolder;
+  background-color: white;
+  border: .5px solid #aaa;
+}.reto button.solucion:hover{
+  color: white;
+  background-color: #09a129;
+  border: .5px solid #fff;
+}
+
+.lista {
+  font-size: 18px;
+  padding-left: 30px;
+}
+.lista li {
+  margin-top: 20px;
+  list-style:circle;
+  text-align: justify;
+}
+.lista .list-title {
+  font-weight: bolder;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+
 @media (max-width: 1025px) {
   .width-70{
     width: 90%;
@@ -180,7 +279,7 @@
     width: 100%;
     float: none;
   }
-  .reto{
+  .retos{
     width: 100%;
     float: none;
   }
@@ -195,4 +294,9 @@
   .video {
     padding-top: 56.25%;
   }
+  .reto .content{
+    height: auto;
+    width: 90%;
+  }
+
 }

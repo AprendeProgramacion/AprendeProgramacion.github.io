@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Reto1BComponent } from './reto1-b.component';
+import { SacarCuadradoComponent } from './sacar-cuadrado.component';
 
-describe('Reto1BComponent', () => {
-  let component: Reto1BComponent;
-  let fixture: ComponentFixture<Reto1BComponent>;
+describe('SacarCuadradoComponent', () => {
+  let component: SacarCuadradoComponent;
+  let fixture: ComponentFixture<SacarCuadradoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Reto1BComponent ]
+      declarations: [ SacarCuadradoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Reto1BComponent);
+    fixture = TestBed.createComponent(SacarCuadradoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

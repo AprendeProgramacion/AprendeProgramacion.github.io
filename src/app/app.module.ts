@@ -23,8 +23,6 @@ import { InputComponent } from './components/temas/input/input.component';
 import { OpAritComponent } from './components/temas/op-arit/op-arit.component';
 import { ContenidoRetosComponent } from './components/contenido-retos/contenido-retos.component';
 import { AsideRetosComponent } from './components/aside-retos/aside-retos.component';
-import { InicioRetosComponent } from './components/retos/inicio-retos/inicio-retos.component';
-import { Reto1BComponent } from './components/retos/reto1-b/reto1-b.component';
 import { OpLogicComponent } from './components/temas/op-logic/op-logic.component';
 import { CondComponent } from './components/temas/cond/cond.component';
 import { WhileComponent } from './components/temas/while/while.component';
@@ -32,7 +30,17 @@ import { ForComponent } from './components/temas/for/for.component';
 import { FuncProcComponent } from './components/temas/func-proc/func-proc.component';
 import { LibreriasComponent } from './components/temas/librerias/librerias.component';
 import { ArreglosComponent } from './components/temas/arreglos/arreglos.component';
-
+import { SumarNumerosVariablesComponent } from './components/retos/basico/l1/sumar-numeros-variables/sumar-numeros-variables.component';
+import { InicioRetosComponent } from './components/retos/inicio-retos/inicio-retos.component';
+import { InicioBasL1Component } from './components/retos/basico/l1/inicio-bas-l1/inicio-bas-l1.component';
+import { SacarModuloComponent } from './components/retos/basico/l1/sacar-modulo/sacar-modulo.component';
+import { SacarCuadradoComponent } from './components/retos/basico/l1/sacar-cuadrado/sacar-cuadrado.component';
+import { SacarAreaCuadradoComponent } from './components/retos/basico/l1/sacar-area-cuadrado/sacar-area-cuadrado.component';
+import { SacarAreaCilindroComponent } from './components/retos/basico/l1/sacar-area-cilindro/sacar-area-cilindro.component';
+import { SacarHipotenusaComponent } from './components/retos/basico/l1/sacar-hipotenusa/sacar-hipotenusa.component';
+import { SacarDefinitivaComponent } from './components/retos/basico/l2/sacar-definitiva/sacar-definitiva.component';
+import { InicioBasL2Component } from './components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component';
+import { EvaluarDiaComponent } from './components/retos/basico/l2/evaluar-dia/evaluar-dia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,15 +64,24 @@ import { ArreglosComponent } from './components/temas/arreglos/arreglos.componen
     OpAritComponent,
     ContenidoRetosComponent,
     AsideRetosComponent,
-    InicioRetosComponent,
-    Reto1BComponent,
     OpLogicComponent,
     CondComponent,
     WhileComponent,
     ForComponent,
     FuncProcComponent,
     LibreriasComponent,
-    ArreglosComponent
+    ArreglosComponent,
+    SumarNumerosVariablesComponent,
+    InicioRetosComponent,
+    InicioBasL1Component,
+    SacarModuloComponent,
+    SacarCuadradoComponent,
+    SacarAreaCuadradoComponent,
+    SacarAreaCilindroComponent,
+    SacarHipotenusaComponent,
+    InicioBasL2Component,
+    SacarDefinitivaComponent,
+    EvaluarDiaComponent,
   ],
   imports: [
     BrowserModule,
