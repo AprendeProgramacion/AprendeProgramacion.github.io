@@ -26,6 +26,7 @@ import { LibreriasComponent } from "./components/temas/librerias/librerias.compo
 import { ArreglosComponent } from "./components/temas/arreglos/arreglos.component";
 import { InicioRetosComponent } from "./components/retos/inicio-retos/inicio-retos.component";
 import { InicioBasL1Component } from "./components/retos/basico/l1/inicio-bas-l1/inicio-bas-l1.component";
+import { InicioBasL2Component } from "./components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -53,6 +54,7 @@ const appRoutes:Routes = [
     { path: 'retos', component: ContenidoRetosComponent, children:[
       { path: '', component: InicioRetosComponent },
       { path: 'basico/nivel-1', component: InicioBasL1Component },
+      { path: 'basico/nivel-2', component: InicioBasL2Component },
       { path: '**', component: ErrorComponent }
     ]},
     { path: 'about', component: AboutComponent },

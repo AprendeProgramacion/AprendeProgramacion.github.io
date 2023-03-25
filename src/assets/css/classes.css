@@ -252,7 +252,7 @@
 }.reto button.solucion:hover{
   color: white;
   background-color: #09a129;
-  border: none;
+  border: .5px solid #fff;
 }
 
 .lista {

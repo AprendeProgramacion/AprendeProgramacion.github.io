@@ -1,0 +1,17 @@
+<div class="reto">
+  <div class="content">
+    <div class="title">
+      <h3>Evaluar el dia de la semana</h3>
+      <button class="btn-cerrar" (click)="close()"><img src="assets/img/icons/close.png" alt=""></button>
+    </div>
+    <hr>
+    <div class="description">
+      <p>Solicitar un numero al usuario entre 1 y 7, y calcular el dia de la semana correspondiente a este numero.</p>
+      <p><strong>NOTA: </strong> Es obligatorio el uso de la estructura switch-case para este ejercicio.</p>
+    </div>
+    <button class="solucion" (click)="solution()">SOLUCION</button>
+    <div class="image-complete" *ngIf="sol">
+      <img src="assets/img/retos_basico_dia.png" alt="solucion nota definitiva">
+    </div>
+  </div>
+</div>

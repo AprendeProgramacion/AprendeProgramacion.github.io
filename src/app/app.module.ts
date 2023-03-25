@@ -38,7 +38,9 @@ import { SacarCuadradoComponent } from './components/retos/basico/l1/sacar-cuadr
 import { SacarAreaCuadradoComponent } from './components/retos/basico/l1/sacar-area-cuadrado/sacar-area-cuadrado.component';
 import { SacarAreaCilindroComponent } from './components/retos/basico/l1/sacar-area-cilindro/sacar-area-cilindro.component';
 import { SacarHipotenusaComponent } from './components/retos/basico/l1/sacar-hipotenusa/sacar-hipotenusa.component';
-
+import { SacarDefinitivaComponent } from './components/retos/basico/l2/sacar-definitiva/sacar-definitiva.component';
+import { InicioBasL2Component } from './components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component';
+import { EvaluarDiaComponent } from './components/retos/basico/l2/evaluar-dia/evaluar-dia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +78,10 @@ import { SacarHipotenusaComponent } from './components/retos/basico/l1/sacar-hip
     SacarCuadradoComponent,
     SacarAreaCuadradoComponent,
     SacarAreaCilindroComponent,
-    SacarHipotenusaComponent
+    SacarHipotenusaComponent,
+    InicioBasL2Component,
+    SacarDefinitivaComponent,
+    EvaluarDiaComponent,
   ],
   imports: [
     BrowserModule,
