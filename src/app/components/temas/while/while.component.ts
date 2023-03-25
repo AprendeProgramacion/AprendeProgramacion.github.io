@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
   selector: 'app-while',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./while.component.css']
 })
 export class WhileComponent {
-
+  title:string = "Ciclos While";
+  constructor(private txt:TitleTextService){}
+  ngOnInit(){
+    setTimeout(() => this.txt.text.emit(this.title),1);
+  }
 }

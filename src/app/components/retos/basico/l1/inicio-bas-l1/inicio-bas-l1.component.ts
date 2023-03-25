@@ -5,6 +5,7 @@ import { SacarCuadradoService } from 'src/app/services/basico/l1/sacar-cuadrado.
 import { SacarAreaCuadradoService } from 'src/app/services/basico/l1/sacar-area-cuadrado.service';
 import { SacarAreaCilindroService } from 'src/app/services/basico/l1/sacar-area-cilindro.service';
 import { SacarHipotenusaService } from 'src/app/services/basico/l1/sacar-hipotenusa.service';
+import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
   selector: 'app-inicio-bas-l1',
@@ -18,7 +19,9 @@ export class InicioBasL1Component {
   sacar_area_cua:boolean = false;
   sacar_area_cil:boolean = false;
   sacar_hipo:boolean = false;
+  title:string = "Retos Basicos Nivel 1";
   constructor(
+    private txt:TitleTextService,
     private sumarNums: SumarDosNumsService,
     private sacarMod: SacarModuloService,
     private sacarCua: SacarCuadradoService,
@@ -27,6 +30,7 @@ export class InicioBasL1Component {
     private sacarHipo: SacarHipotenusaService
   ){}
   ngOnInit() {
+    setTimeout(() => this.txt.text.emit(this.title),1);
     this.sumarNums.sumarNums.subscribe(s => this.sumar=s);
     this.sacarMod.sacarModulo.subscribe(s => this.sacar_mod=s);
     this.sacarCua.sacarCuadrado.subscribe(s => this.sacar_cua=s);

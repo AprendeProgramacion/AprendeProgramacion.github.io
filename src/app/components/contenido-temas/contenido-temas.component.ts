@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
   selector: 'app-contenido-temas',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ContenidoTemasComponent {
   title:string = "Aprende"
-  constructor(){}
+  constructor(private txt:TitleTextService){}
+  ngOnInit(){
+    setTimeout(() => this.txt.text.emit(this.title),1);
+  }
 }

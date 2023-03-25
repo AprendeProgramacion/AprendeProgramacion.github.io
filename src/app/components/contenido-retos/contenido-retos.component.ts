@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
   selector: 'app-contenido-retos',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./contenido-retos.component.css']
 })
 export class ContenidoRetosComponent {
-  title:string = 'retos'
+  title:string = 'retos';
+  constructor(private txt:TitleTextService){}
+  ngOnInit(){
+    setTimeout(() => this.txt.text.emit(this.title),1);
+  }
 }

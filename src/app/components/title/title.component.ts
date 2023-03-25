@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
   selector: 'app-title',
@@ -6,6 +7,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./title.component.css']
 })
 export class TitleComponent {
-  @Input() nombre: string ='';
-  constructor(){}
+  nombre: string ='';
+  constructor(
+    private title:TitleTextService
+  ){}
+  ngOnInit() {
+    this.title.text.subscribe(s => this.nombre = s);
+  }
 }

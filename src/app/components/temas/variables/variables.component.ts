@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
   selector: 'app-variables',
@@ -11,6 +12,11 @@ export class VariablesComponent {
   b3:boolean = false;
   b4:boolean = false;
   b5:boolean = false;
+  title:string = "Variables";
+  constructor(private txt:TitleTextService){}
+  ngOnInit(){
+    setTimeout(() => this.txt.text.emit(this.title),1);
+  }
   toggleB1(){
     this.b1=!this.b1;
     this.b2=false;
