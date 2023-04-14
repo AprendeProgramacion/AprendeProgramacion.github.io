@@ -32,6 +32,7 @@ import { ForComponent } from './components/temas/for/for.component';
 import { FuncProcComponent } from './components/temas/func-proc/func-proc.component';
 import { LibreriasComponent } from './components/temas/librerias/librerias.component';
 import { ArreglosComponent } from './components/temas/arreglos/arreglos.component';
+import { PabloComponent } from './components/devs/pablo/pablo.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ArreglosComponent } from './components/temas/arreglos/arreglos.componen
     ForComponent,
     FuncProcComponent,
     LibreriasComponent,
-    ArreglosComponent
+    ArreglosComponent,
+    PabloComponent
   ],
   imports: [
     BrowserModule,
