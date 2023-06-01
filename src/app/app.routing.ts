@@ -59,7 +59,6 @@ const appRoutes:Routes = [
       { path: '**', component: ErrorComponent }
     ]},
     { path: 'about', component: AboutComponent },
-    { path: '**', component: ErrorComponent },
     { path: 'desarrolladores/pablo-uribe-zuluaga', component: PabloComponent },
     { path: '**', component: ErrorComponent }
 ];
