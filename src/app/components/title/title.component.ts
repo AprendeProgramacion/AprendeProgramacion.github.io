@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { TitleTextService } from 'src/app/services/title/title-text.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { TitleTextService } from 'src/app/services/title/title-text.service';
   styleUrls: ['./title.component.css']
 })
 export class TitleComponent {
-  nombre: string ='';
+  @Input() nombre: string ='';
   constructor(
     private title:TitleTextService
   ){}

@@ -41,6 +41,8 @@ import { SacarHipotenusaComponent } from './components/retos/basico/l1/sacar-hip
 import { SacarDefinitivaComponent } from './components/retos/basico/l2/sacar-definitiva/sacar-definitiva.component';
 import { InicioBasL2Component } from './components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component';
 import { EvaluarDiaComponent } from './components/retos/basico/l2/evaluar-dia/evaluar-dia.component';
+import { PabloComponent } from './components/devs/pablo/pablo.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,6 +84,7 @@ import { EvaluarDiaComponent } from './components/retos/basico/l2/evaluar-dia/ev
     InicioBasL2Component,
     SacarDefinitivaComponent,
     EvaluarDiaComponent,
+    PabloComponent
   ],
   imports: [
     BrowserModule,

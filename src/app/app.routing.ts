@@ -27,6 +27,7 @@ import { ArreglosComponent } from "./components/temas/arreglos/arreglos.componen
 import { InicioRetosComponent } from "./components/retos/inicio-retos/inicio-retos.component";
 import { InicioBasL1Component } from "./components/retos/basico/l1/inicio-bas-l1/inicio-bas-l1.component";
 import { InicioBasL2Component } from "./components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component";
+import { PabloComponent } from "./components/devs/pablo/pablo.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -59,6 +60,8 @@ const appRoutes:Routes = [
     ]},
     { path: 'about', component: AboutComponent },
     { path: '**', component: ErrorComponent },
+    { path: 'desarrolladores/pablo-uribe-zuluaga', component: PabloComponent },
+    { path: '**', component: ErrorComponent }
 ];
 export const appRoutingProviders:any[] = [];
 export const routing = RouterModule.forRoot(appRoutes);
