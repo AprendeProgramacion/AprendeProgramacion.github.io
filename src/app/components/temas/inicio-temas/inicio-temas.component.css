@@ -1,0 +1,77 @@
+#cursos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#cursos div {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  color: #09a129;
+  font-weight: bold;
+  border: 2px solid #09a129;
+}
+
+#cursos div::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #09a129;
+  z-index: 1;
+  animation: hi .3s linear;
+  left: -600px;
+}
+
+#cursos div:hover {
+  color: #09a129;
+}
+
+#cursos div:hover::after {
+  animation: sh .3s linear;
+  left: 0px;
+}
+
+@keyframes sh {
+  from {
+    left: -600px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes hi {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 600px;
+  }
+}
+
+#cursos div:hover {
+  color: white;
+}
+
+#cursos div img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 2;
+}
+
+#cursos div span {
+  margin: 5px 0;
+  z-index: 2;
+}
