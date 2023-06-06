@@ -43,6 +43,7 @@ import { InicioBasL2Component } from './components/retos/basico/l2/inicio-bas-l2
 import { EvaluarDiaComponent } from './components/retos/basico/l2/evaluar-dia/evaluar-dia.component';
 import { PabloComponent } from './components/devs/pablo/pablo.component';
 import { InicioFundamentosComponent } from './components/temas/fundamentos/inicio-fundamentos/inicio-fundamentos.component';
+import { InicioADIComponent } from './components/temas/antes-de-iniciar/inicio-adi/inicio-adi.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { InicioFundamentosComponent } from './components/temas/fundamentos/inici
     SacarDefinitivaComponent,
     EvaluarDiaComponent,
     PabloComponent,
-    InicioFundamentosComponent
+    InicioFundamentosComponent,
+    InicioADIComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TemasService } from 'src/app/services/temas.service';
 
 @Component({
   selector: 'app-aside-temas',
@@ -6,73 +7,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./aside-temas.component.css']
 })
 export class AsideTemasComponent {
-  antes: boolean;
-  basics: boolean;
-  tech: boolean;
-  antesClass: string;
-  basicsClass: string;
-  techClass: string;
-
-  constructor() {
-    this.antes = false;
-    this.basics = false;
-    this.tech = false;
-    this.antesClass = 'hide';
-    this.basicsClass = 'hide';
-    this.techClass = 'hide';
+  visibility: boolean;
+  view: string;
+  links: any = [];
+  constructor(private temas: TemasService) {
+    this.visibility = false;
+    this.view = 'hide';
   }
-  hideAntes(){
-    this.antes = false;
-    this.antesClass = 'hide';
+  ngOnInit(){
+    this.temas.tema.subscribe((res)=>{
+      switch(res){
+        case "fundamentos":
+          this.links = this.temas.temas.fundamentos;
+          break;
+        case "adi":
+          this.links = this.temas.temas.adi;
+          break;
+      }
+    });
   }
-  hideBasics(){
-    this.basics = false;
-    this.basicsClass = 'hide';
+  hide(){
+    this.visibility = false;
+    this.view = 'hide';
   }
-  hideTech(){
-    this.tech = false;
-    this.techClass = 'hide';
+  show(){
+    this.visibility = true;
+    this.view = 'show';
   }
-  showAntes(){
-    this.antes = true;
-    this.antesClass = 'show';
-  }
-  showBasics(){
-    this.basics = true;
-    this.basicsClass = 'show';
-  }
-  showTech(){
-    this.tech = true;
-    this.techClass ='show';
-  }
-  toggleAntes() {
-    if(this.antes){
-      this.hideAntes();
+  toggle() {
+    if(this.visibility){
+      this.hide();
     }
     else{
-      this.showAntes();
+      this.show();
     }
-    this.hideBasics();
-    this.hideTech();
-  }
-  toggleBasics() {
-    if(this.basics){
-      this.hideBasics();
-    }
-    else{
-      this.showBasics();
-    }
-    this.hideAntes();
-    this.hideTech();
-  }
-  toggleTech() {
-    if(this.tech){
-      this.hideTech();
-    }
-    else{
-      this.showTech();
-    }
-    this.hideAntes();
-    this.hideBasics();
   }
 }

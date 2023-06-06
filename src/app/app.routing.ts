@@ -29,29 +29,37 @@ import { InicioBasL1Component } from "./components/retos/basico/l1/inicio-bas-l1
 import { InicioBasL2Component } from "./components/retos/basico/l2/inicio-bas-l2/inicio-bas-l2.component";
 import { PabloComponent } from "./components/devs/pablo/pablo.component";
 import { InicioFundamentosComponent } from "./components/temas/fundamentos/inicio-fundamentos/inicio-fundamentos.component";
+import { InicioADIComponent } from "./components/temas/antes-de-iniciar/inicio-adi/inicio-adi.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
     { path: 'inicio', component: ContenidoInicioComponent },
     { path: 'aprende', component: ContenidoTemasComponent, children: [
       { path: '', component: InicioTemasComponent },
-      { path: 'fundamentos', component: InicioFundamentosComponent },
-      { path: 'historia', component: HistoriaComponent },
-      { path: 'enfoques', component: EspecialidadesComponent },
-      { path: 'que-es-programacion', component: DefProgramacionComponent },
-      { path: 'tipos-de-lenguajes', component: TiposLenguajesComponent },
-      { path: 'editores-ides', component: EditoresIDESComponent },
-      { path: 'output', component: OutputComponent },
-      { path: 'variables', component: VariablesComponent },
-      { path: 'input', component: InputComponent },
-      { path: 'operadores-aritmeticos', component: OpAritComponent },
-      { path: 'operadores-logicos', component: OpLogicComponent },
-      { path: 'condicionales', component: CondComponent },
-      { path: 'arreglos-y-matrices', component: ArreglosComponent},
-      { path: 'ciclos-while', component: WhileComponent },
-      { path: 'ciclos-for', component: ForComponent },
-      { path: 'funciones-y-procedimientos', component: FuncProcComponent },
-      { path: 'librerias', component: LibreriasComponent },
+      { path: 'fundamentos', component: InicioFundamentosComponent, children:[
+        { path: '', component: DefProgramacionComponent },
+        { path: 'que-es-programacion', component: DefProgramacionComponent },
+        { path: 'tipos-de-lenguajes', component: TiposLenguajesComponent },
+        { path: 'editores-ides', component: EditoresIDESComponent },
+        { path: 'output', component: OutputComponent },
+        { path: 'variables', component: VariablesComponent },
+        { path: 'input', component: InputComponent },
+        { path: 'operadores-aritmeticos', component: OpAritComponent },
+        { path: 'operadores-logicos', component: OpLogicComponent },
+        { path: 'condicionales', component: CondComponent },
+        { path: 'arreglos-y-matrices', component: ArreglosComponent},
+        { path: 'ciclos-while', component: WhileComponent },
+        { path: 'ciclos-for', component: ForComponent },
+        { path: 'funciones-y-procedimientos', component: FuncProcComponent },
+        { path: 'librerias', component: LibreriasComponent },
+        { path: '**', component: ErrorComponent }
+      ]},
+      { path: 'antes-de-iniciar', component: InicioADIComponent, children:[
+        { path: '', component: HistoriaComponent },
+        { path: 'historia', component: HistoriaComponent },
+        { path: 'enfoques', component: EspecialidadesComponent },
+        { path: '**', component: ErrorComponent }
+      ]},
       { path: '**', component: ErrorComponent }
     ]},
     { path: 'retos', component: ContenidoRetosComponent, children:[
