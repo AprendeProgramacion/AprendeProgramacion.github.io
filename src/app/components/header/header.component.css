@@ -8,10 +8,12 @@
   background-color: white;
   box-shadow: none;
 }
-#header a{
+
+#header a {
   text-decoration: none;
   color: #000;
 }
+
 #logo {
   background-color: white;
   z-index: 200;
@@ -22,17 +24,22 @@
   width: 350px;
   height: 100%;
 }
+
 #logo img {
   height: 40px;
 }
+
 #logo span {
   margin-left: 10px;
   font-size: 20px;
 }
-#logo strong{
+
+#logo strong {
   color: #036d19;
 }
+
 #menu {
+  box-shadow: none;
   z-index: 100;
   overflow: hidden;
   float: right;
@@ -53,7 +60,8 @@
   height: 90%;
   width: calc((100%)/3);
 }
-#menu a{
+
+#menu a {
   display: flex;
   height: 100%;
   width: 100%;
@@ -67,7 +75,8 @@
   position: relative;
   top: 0px;
 }
-#menu a::after{
+
+#menu a::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -76,32 +85,39 @@
   left: -150px;
   animation: hi .2s linear;
 }
-#menu a:hover{
+
+#menu a:hover {
   color: #036d19;
   transition: all .5s;
   text-transform: uppercase;
   font-weight: bold;
 }
-#menu a:hover::after{
+
+#menu a:hover::after {
   animation: sh .2s linear;
   left: 0px;
 }
-@keyframes sh{
-  from{
+
+@keyframes sh {
+  from {
     left: -150px;
   }
-  to{
+
+  to {
     left: 0px;
   }
 }
-@keyframes hi{
-  from{
+
+@keyframes hi {
+  from {
     left: 0px;
   }
-  to{
+
+  to {
     left: 150px;
   }
 }
+
 /*Corte1*/
 @media (max-width: 1003px) {
   #header {
@@ -111,50 +127,61 @@
     justify-content: center;
     align-items: center;
   }
+
   #logo {
     width: 100%;
     background-color: white;
     justify-content: center;
   }
-  .center{
+
+  .center {
     width: 100%;
   }
-  .show-header{
+
+  .show-header {
     background-color: white;
     animation: showbar .3s linear;
     top: 60px;
-    position:absolute;
+    position: absolute;
   }
+
   @keyframes showbar {
     from {
       top: 0;
     }
-    to{
+
+    to {
       top: 60px;
     }
   }
-  .hide-header{
+
+  .hide-header {
     background-color: white;
     position: absolute;
     animation: hidebar .3s linear;
     top: 0;
 
   }
+
   @keyframes hidebar {
     from {
       top: 60px;
     }
-    to{
+
+    to {
       top: 0;
     }
   }
-  #logo, #menu {
+
+  #logo,
+  #menu {
     height: 60px;
     float: none;
     margin: 0 auto;
     width: 100%;
   }
-  #menu a::after{
+
+  #menu a::after {
     left: -260px;
   }
 }

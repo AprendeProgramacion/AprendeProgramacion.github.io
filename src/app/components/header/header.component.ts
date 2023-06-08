@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import * as $ from 'jquery';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,37 +6,61 @@ import * as $ from 'jquery';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  windowWidth:any;
+  windowScroll:any;
   constructor(){
   }
   ngOnInit(){
+    this.windowWidth = window.innerWidth;
+    this.windowScroll = window.scrollY;
+
+  }
+  @HostListener('window:scroll')
+  onScroll(){
+    this.scrollAction()
+  }
+
+  @HostListener('window:resize')
+  onResize(){
+    this.windowWidth = window.innerWidth;
+  }
+
+  scrollAction(){
     let header = document.getElementById('header');
-    $(window).scroll(() => {
-      if (<number>$(window).scrollTop() <=299 && <number>$(window).width()>700 && header != null) {
-        header.style.boxShadow="none";
+    let navbar = document.getElementById('menu');
+    if (window.scrollY <=299 && this.windowWidth>700 && header != null && navbar != null) {
+      navbar.style.boxShadow="none";
+      header.style.boxShadow="none";
+    }
+    else if (window.scrollY <=199 && this.windowWidth<=700 && header != null && navbar != null) {
+      navbar.style.boxShadow="none";
+      header.style.boxShadow="none";
+    }
+    else if(header != null && navbar != null){
+      if(this.windowWidth <= 1003){
+        navbar.style.boxShadow="0 2px 10px #555";
       }
-      else if (<number>$(window).scrollTop() <=199 && <number>$(window).width()<=700 && header != null) {
-        header.style.boxShadow="none";
-      }
-      else if(header != null){
-        header.style.boxShadow="0 2px 20px #888";
-      }
-    })
-    let logo = document.getElementById('menu');
-    let scroll = <number>$(window).scrollTop();
+      header.style.boxShadow="0 2px 10px #555";
+    }
     let center= document.getElementById('center')
-    $(window).scroll(() => {
-      if(<number>$(window).width()<=1003)
-      if (<number>$(window).scrollTop()>scroll&&logo != null){
-        logo.classList.add("hide-header")
-        logo.classList.remove("show-header")
+    if(this.windowWidth<=1003){
+      console.log(
+        "ScrollAct: "+window.scrollY+
+        "\nScrollGuard: "+this.windowScroll+
+        "-------"
+      );
+      if (window.scrollY>this.windowScroll&&navbar != null){
+        navbar.style.boxShadow="none";
+        navbar.classList.add("hide-header")
+        navbar.classList.remove("show-header")
         center?.classList.remove("width-70")
       }
-      else if (<number>$(window).scrollTop()<scroll&&logo != null){
-        logo.classList.add("show-header")
-        logo.classList.remove("hide-header")
+      else if (window.scrollY<this.windowScroll&&navbar != null){
+        navbar.classList.add("show-header")
+        navbar.classList.remove("hide-header")
         center?.classList.add("width-70")
       }
-      scroll=<number>$(window).scrollTop();
-    });
+      this.windowScroll=window.scrollY;
+    }
   }
 }
