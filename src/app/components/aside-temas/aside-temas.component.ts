@@ -17,11 +17,14 @@ export class AsideTemasComponent {
   ngOnInit(){
     this.temas.tema.subscribe((res)=>{
       switch(res){
+        case "adi":
+          this.links = this.temas.temas.adi;
+          break;
         case "fundamentos":
           this.links = this.temas.temas.fundamentos;
           break;
-        case "adi":
-          this.links = this.temas.temas.adi;
+        case "git":
+          this.links = this.temas.temas.git;
           break;
       }
     });

@@ -44,6 +44,8 @@ import { EvaluarDiaComponent } from './components/retos/basico/l2/evaluar-dia/ev
 import { PabloComponent } from './components/devs/pablo/pablo.component';
 import { InicioFundamentosComponent } from './components/temas/fundamentos/inicio-fundamentos/inicio-fundamentos.component';
 import { InicioADIComponent } from './components/temas/antes-de-iniciar/inicio-adi/inicio-adi.component';
+import { InicioGitComponent } from './components/temas/git/inicio-git/inicio-git.component';
+import { QueEsGitComponent } from './components/temas/git/que-es-git/que-es-git.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +90,9 @@ import { InicioADIComponent } from './components/temas/antes-de-iniciar/inicio-a
     EvaluarDiaComponent,
     PabloComponent,
     InicioFundamentosComponent,
-    InicioADIComponent
+    InicioADIComponent,
+    InicioGitComponent,
+    QueEsGitComponent
   ],
   imports: [
     BrowserModule,

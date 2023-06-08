@@ -30,12 +30,20 @@ import { InicioBasL2Component } from "./components/retos/basico/l2/inicio-bas-l2
 import { PabloComponent } from "./components/devs/pablo/pablo.component";
 import { InicioFundamentosComponent } from "./components/temas/fundamentos/inicio-fundamentos/inicio-fundamentos.component";
 import { InicioADIComponent } from "./components/temas/antes-de-iniciar/inicio-adi/inicio-adi.component";
+import { InicioGitComponent } from "./components/temas/git/inicio-git/inicio-git.component";
+import { QueEsGitComponent } from "./components/temas/git/que-es-git/que-es-git.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
     { path: 'inicio', component: ContenidoInicioComponent },
     { path: 'aprende', component: ContenidoTemasComponent, children: [
       { path: '', component: InicioTemasComponent },
+      { path: 'antes-de-iniciar', component: InicioADIComponent, children:[
+        { path: '', component: HistoriaComponent },
+        { path: 'historia', component: HistoriaComponent },
+        { path: 'enfoques', component: EspecialidadesComponent },
+        { path: '**', component: ErrorComponent }
+      ]},
       { path: 'fundamentos', component: InicioFundamentosComponent, children:[
         { path: '', component: DefProgramacionComponent },
         { path: 'que-es-programacion', component: DefProgramacionComponent },
@@ -54,11 +62,10 @@ const appRoutes:Routes = [
         { path: 'librerias', component: LibreriasComponent },
         { path: '**', component: ErrorComponent }
       ]},
-      { path: 'antes-de-iniciar', component: InicioADIComponent, children:[
-        { path: '', component: HistoriaComponent },
-        { path: 'historia', component: HistoriaComponent },
-        { path: 'enfoques', component: EspecialidadesComponent },
-        { path: '**', component: ErrorComponent }
+      { path: 'git', component: InicioGitComponent, children:[
+        { path: '', component: QueEsGitComponent },
+        { path: 'que-es-git', component: QueEsGitComponent },
+        { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }
     ]},

@@ -74,7 +74,17 @@ export class TemasService {
         "nombre": "librerias",
         "link": "/aprende/fundamentos/librerias"
       }
-    ]
+    ],
+    "git":[
+      {
+        "nombre": "¿Que es GIT?",
+        "link": "/aprende/git/que-es-git"
+      },
+      {
+        "nombre": "Estados en GIT",
+        "link": "/aprende/git/estados"
+      },
+    ],
   }
   constructor() {
     this.tema = new EventEmitter();
