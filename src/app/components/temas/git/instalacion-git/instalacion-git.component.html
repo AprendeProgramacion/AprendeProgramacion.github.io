@@ -1,0 +1,76 @@
+<section class="tema">
+  <h3>Instalacion de Git</h3>
+  <h3>Windows</h3>
+  <ol>
+    <li>Verificamos el tipo de sistema operativo que tenemos instalado, para eso, debemos ir al explorador de archivos.
+      Luego buscamos 'Este equipo' y le damos click derecho para seleccionar propiedades. Alli sabremos si el sistema es
+      de 32 bits o de 64 bits.</li>
+    <div class="image-complete">
+      <img src="assets/img/git_instalacion_1.png" alt="">
+    </div>
+    <div class="image-complete">
+      <img src="assets/img/git_instalacion_2.png" alt="">
+    </div>
+    <li>Abrimos el navegador y entramos a <a class="keyword" href="https://git-scm.com" target="_blank">git-scm.com</a>,
+      luego damos click en el boton descargar para windows.</li>
+    <div class="image-complete">
+      <img src="assets/img/git_instalacion_3.png" alt="">
+    </div>
+    <li>Seleccionamos el enlace de descarga de acuerdo con nuestro tipo de sistema.</li>
+    <div class="image-complete">
+      <img src="assets/img/git_instalacion_4.png" alt="">
+    </div>
+    <li>Ejecutamos el instalador y le damos siguiente sin modificar ninguna configuracion.</li>
+    <div class="image-complete">
+      <img src="assets/img/git_instalacion_5.png" alt="">
+    </div>
+    <li>Cuando finalice la instalacion, vamos a deshabilitar la casilla 'View release notes' y habilitamos 'Launch Git
+      Bash'.</li>
+    <div class="image-complete">
+      <img src="assets/img/git_instalacion_6.png" alt="">
+    </div>
+  </ol>
+  <h3>Linux</h3>
+  <ol>
+    <li>Abrimos un terminal.</li>
+    <li>Ejecutamos:</li>
+    <h4>Debian y derivados</h4>
+    <code>
+      <li>sudo apt install git</li>
+    </code>
+    <h4>Arch y derivados</h4>
+    <code>
+      <li>sudo pacman -S git</li>
+    </code>
+  </ol>
+  <br><br>
+  <h3>Configuracion de Git</h3>
+  <p>Una vez tenemos instalado git, debemos abrir la terminal correspondiente para poder hacer configuraciones basicas
+    antes de empezar a guardar cambios.</p>
+  <ol>
+    <li>Debemos cambiar la rama por defecto que se crea cuando inicializamos un repositorio. Esto es debido a una
+      incompatibilidad con github, ya que la rama que viene configurada es 'master', mientras que github trabaja con
+      'main'. <br>
+      Para ello vamos a ejecutar el siguiente comando:
+    </li>
+    <code>
+      <li>git config --global init.defaultBranch "main"</li>
+    </code>
+    <li>En segundo lugar, debemos decirle a git quienes somos, esto les ayuda a los otros miembros del equipo a saber
+      quien hizo los cambios. <br>
+      Para esto ejecutamos:
+    </li>
+    <code>
+      <li>git config --global user.name "{{'<'}}nombre{{'>'}}"</li>
+    </code>
+    <code>
+      <li>git config --global user.email "{{'<'}}email{{'>'}}"</li>
+    </code>
+  </ol>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ud3vIwitb2I" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>

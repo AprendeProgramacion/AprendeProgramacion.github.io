@@ -84,6 +84,10 @@ export class TemasService {
         "nombre": "Estados en GIT",
         "link": "/aprende/git/estados"
       },
+      {
+        "nombre": "Instalacion y Configuracion",
+        "link": "/aprende/git/instalacion"
+      },
     ],
   }
   constructor() {

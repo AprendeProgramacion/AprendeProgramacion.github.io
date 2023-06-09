@@ -44,11 +44,6 @@ export class HeaderComponent {
     }
     let center= document.getElementById('center')
     if(this.windowWidth<=1003){
-      console.log(
-        "ScrollAct: "+window.scrollY+
-        "\nScrollGuard: "+this.windowScroll+
-        "-------"
-      );
       if (window.scrollY>this.windowScroll&&navbar != null){
         navbar.style.boxShadow="none";
         navbar.classList.add("hide-header")

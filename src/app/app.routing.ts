@@ -33,6 +33,7 @@ import { InicioADIComponent } from "./components/temas/antes-de-iniciar/inicio-a
 import { InicioGitComponent } from "./components/temas/git/inicio-git/inicio-git.component";
 import { QueEsGitComponent } from "./components/temas/git/que-es-git/que-es-git.component";
 import { EstadosComponent } from "./components/temas/git/estados/estados.component";
+import { InstalacionGitComponent } from "./components/temas/git/instalacion-git/instalacion-git.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -67,6 +68,7 @@ const appRoutes:Routes = [
         { path: '', component: QueEsGitComponent },
         { path: 'que-es-git', component: QueEsGitComponent },
         { path: 'estados', component: EstadosComponent },
+        { path: 'instalacion', component: InstalacionGitComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }
