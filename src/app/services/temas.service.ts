@@ -88,6 +88,10 @@ export class TemasService {
         "nombre": "Instalacion y Configuracion",
         "link": "/aprende/git/instalacion"
       },
+      {
+        "nombre": "Terminal",
+        "link": "/aprende/git/terminal"
+      },
     ],
   }
   constructor() {

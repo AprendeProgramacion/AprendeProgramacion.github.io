@@ -48,6 +48,7 @@ import { InicioGitComponent } from './components/temas/git/inicio-git/inicio-git
 import { QueEsGitComponent } from './components/temas/git/que-es-git/que-es-git.component';
 import { EstadosComponent } from './components/temas/git/estados/estados.component';
 import { InstalacionGitComponent } from './components/temas/git/instalacion-git/instalacion-git.component';
+import { TerminalBasicaGitComponent } from './components/temas/git/terminal-basica-git/terminal-basica-git.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import { InstalacionGitComponent } from './components/temas/git/instalacion-git/
     InicioGitComponent,
     QueEsGitComponent,
     EstadosComponent,
-    InstalacionGitComponent
+    InstalacionGitComponent,
+    TerminalBasicaGitComponent
   ],
   imports: [
     BrowserModule,
