@@ -46,6 +46,7 @@ import { InicioFundamentosComponent } from './components/temas/fundamentos/inici
 import { InicioADIComponent } from './components/temas/antes-de-iniciar/inicio-adi/inicio-adi.component';
 import { InicioGitComponent } from './components/temas/git/inicio-git/inicio-git.component';
 import { QueEsGitComponent } from './components/temas/git/que-es-git/que-es-git.component';
+import { EstadosComponent } from './components/temas/git/estados/estados.component';
 
 @NgModule({
   declarations: [
@@ -92,7 +93,8 @@ import { QueEsGitComponent } from './components/temas/git/que-es-git/que-es-git.
     InicioFundamentosComponent,
     InicioADIComponent,
     InicioGitComponent,
-    QueEsGitComponent
+    QueEsGitComponent,
+    EstadosComponent
   ],
   imports: [
     BrowserModule,
