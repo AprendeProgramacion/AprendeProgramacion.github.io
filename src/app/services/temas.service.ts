@@ -92,6 +92,10 @@ export class TemasService {
         "nombre": "Terminal",
         "link": "/aprende/git/terminal"
       },
+      {
+        "nombre": "Crear Repositorio",
+        "link": "/aprende/git/crear-repositorio"
+      },
     ],
   }
   constructor() {

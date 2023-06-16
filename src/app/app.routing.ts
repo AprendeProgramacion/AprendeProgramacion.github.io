@@ -35,6 +35,7 @@ import { QueEsGitComponent } from "./components/temas/git/que-es-git/que-es-git.
 import { EstadosComponent } from "./components/temas/git/estados/estados.component";
 import { InstalacionGitComponent } from "./components/temas/git/instalacion-git/instalacion-git.component";
 import { TerminalBasicaGitComponent } from "./components/temas/git/terminal-basica-git/terminal-basica-git.component";
+import { CrearRepoComponent } from "./components/temas/git/crear-repo/crear-repo.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -71,6 +72,7 @@ const appRoutes:Routes = [
         { path: 'estados', component: EstadosComponent },
         { path: 'instalacion', component: InstalacionGitComponent },
         { path: 'terminal', component: TerminalBasicaGitComponent },
+        { path: 'crear-repositorio', component: CrearRepoComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }
