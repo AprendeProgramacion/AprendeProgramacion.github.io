@@ -100,6 +100,10 @@ export class TemasService {
         "nombre": "Comandos Basicos",
         "link": "/aprende/git/comandos-basicos"
       },
+      {
+        "nombre": "Viajes en el Tiempo",
+        "link": "/aprende/git/viaje-en-el-tiempo"
+      },
     ],
   }
   constructor() {

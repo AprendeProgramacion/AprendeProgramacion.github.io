@@ -1,0 +1,34 @@
+<section class="tema">
+  <p>Ya sabemos guardar una version de nuestro proyecto. Pero, ¿Para qué?</p>
+  <p>Con Git podemos viajar hacia una version anterior en caso de necesitarlo, por ejemplo, modifiqué algo y otra
+    funcionalidad se dañó. puedo ir a ua version anterior en la que si funcionaba y saber que fue lo que se dañó.</p>
+  <p>Antes del comando para viajar en el tiempo, necesitamos obtener el hash del commit al que vamos a ir, para eso
+    usamos:</p>
+  <code>
+    <li>git log</li>
+  </code>
+  <p>Tambien necesitamos el nombre de la rama en la que nos encontramos actualmente. aparece al lado de un commit de la
+    siguiente manera:</p>
+  <p>Si todo sale bien, debe salir un mensaje y al final de dicho mensaje debe decir algo como:</p>
+  <code>
+    <li>(HEAD -> {{'<'}}rama{{'>'}}) </li>
+  </code>
+  <p>Una vez tengamos el hash alfanumerico, podemos ir a ese commit usando:</p>
+  <code>
+    <li>git checkout {{'<'}}hash{{'>'}} </li>
+  </code>
+  <p>Si todo sale bien, debe salir un mensaje y al final de dicho mensaje debe decir algo como:</p>
+  <code>
+    <li>Now HEAD is on ({{'<'}}hash{{'>'}}) </li>
+  </code>
+  <p>para volver al presente hay que tener en cuenta el nombre de la rama en la que estabamos antes:</p>
+  <code>
+    <li>git checkout {{'<'}}rama{{'>'}} </li>
+  </code>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4623ThjltM4" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>

@@ -37,6 +37,7 @@ import { InstalacionGitComponent } from "./components/temas/git/instalacion-git/
 import { TerminalBasicaGitComponent } from "./components/temas/git/terminal-basica-git/terminal-basica-git.component";
 import { CrearRepoComponent } from "./components/temas/git/crear-repo/crear-repo.component";
 import { ComandosBasicosGitComponent } from "./components/temas/git/comandos-basicos-git/comandos-basicos-git.component";
+import { ViajeTiempoComponent } from "./components/temas/git/viaje-tiempo/viaje-tiempo.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -75,6 +76,7 @@ const appRoutes:Routes = [
         { path: 'terminal', component: TerminalBasicaGitComponent },
         { path: 'crear-repositorio', component: CrearRepoComponent },
         { path: 'comandos-basicos', component: ComandosBasicosGitComponent },
+        { path: 'viaje-en-el-tiempo', component: ViajeTiempoComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }
