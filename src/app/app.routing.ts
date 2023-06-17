@@ -40,6 +40,7 @@ import { ComandosBasicosGitComponent } from "./components/temas/git/comandos-bas
 import { ViajeTiempoComponent } from "./components/temas/git/viaje-tiempo/viaje-tiempo.component";
 import { DiferenciasEntreVersionesComponent } from "./components/temas/git/diferencias-entre-versiones/diferencias-entre-versiones.component";
 import { RamasGitComponent } from "./components/temas/git/ramas-git/ramas-git.component";
+import { SshGithubComponent } from "./components/temas/git/ssh-github/ssh-github.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -81,6 +82,7 @@ const appRoutes:Routes = [
         { path: 'viaje-en-el-tiempo', component: ViajeTiempoComponent },
         { path: 'diferencia-entre-versiones', component: DiferenciasEntreVersionesComponent },
         { path: 'ramas', component: RamasGitComponent },
+        { path: 'ssh-github', component: SshGithubComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }

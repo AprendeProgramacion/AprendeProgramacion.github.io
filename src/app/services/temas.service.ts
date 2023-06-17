@@ -112,6 +112,10 @@ export class TemasService {
         "nombre": "Ramas",
         "link": "/aprende/git/ramas"
       },
+      {
+        "nombre": "SSH GitHub",
+        "link": "/aprende/git/ssh-github"
+      },
     ],
   }
   constructor() {

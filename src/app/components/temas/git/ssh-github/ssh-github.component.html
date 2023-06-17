@@ -1,0 +1,54 @@
+<section class="tema">
+  <h3>¿Qué es SSH?</h3>
+  <p>SSH (Secure SHell) es un protocolo de conexion para enviar y recibir datos de manera cifrada a traves de internet.
+    funciona usando llaves.</p>
+  <p>Funciona de la siguiente manera: Nuestro pc le envia al receptor de mis archivos (en este caso GitHub) una llave y
+    él hace lo mismo. Cada llave tiene su pareja, que cada uno conserva.</p>
+  <p>Al momento de enviar informacion, mi pc debe cifrarla usando la llave que le dieron, cuando el receptor obtiene el
+    mensaje cifrado, lo puede abrir utilizando la pareja de la llave que envió. Sucede de igual manera cuando el pc
+    recibe informacion.</p>
+  <br>
+  <h4>Crear llaves ssh y configurar conexion</h4>
+  <p>Vamos a crear una conexion SSH para enviar y recibir informacion de GitHub al publicar el proyecto.</p>
+  <p>Lo primero que debemos hacer es movernos a la carpeta 'HOME' (En la terminal se muestra '~'). Para eso ejecutamos
+    el comando:</p>
+  <code>
+    <li>cd</li>
+  </code>
+  <p>Sin argumentos, esto nos llevará a '~'</p>
+  <p>Una vez en '~', ejecutamos:</p>
+  <code>
+    <li>ssh-keygen -t rsa -b 4096 -C {{'<'}}correo de github{{'>'}}</li>
+  </code>
+  <p>Nos va a pedir una ruta, por conveniencia la dejamos vacia. Luego nos va a pedir crear una contraseña, ya depende
+    de la seguridad que deseen, en mi caso la dejo vacia</p>
+  <p>Si las llaves se crearon correctamente, debería aparecer una imagen de caracteres, esa image n es un fingerprint de
+    las llaves.</p>
+  <p>Ahora debemos verificar si el servidor SSH está funcionando correctamente, para esto ejecutamos:</p>
+  <code>
+    <li>eval $(ssh-agent -s) &nbsp;&nbsp;<span class="comment"># Windows & Linux</span></li>
+    <li>eval {{'"'}}$(ssh-agent -s){{'"'}} <span class="comment"># MAC</span></li>
+  </code>
+  <p>Si todo sale bien, debe aparecer 'agent pid 123' donde el numero puede ser cualquiera.</p>
+  <p>Despues de eso debemos movernos a la carpeta '.ssh' que se creó en 'HOME':</p>
+  <code>
+    <li>cd ~/.ssh/</li>
+  </code>
+  <p>Una ves ahi, ejecutamos 'ls' y nos debe salir algo como esto:</p>
+  <code>
+    <li>id_rsa</li>
+    <li>id_rsa.pub</li>
+  </code>
+  <p>Debemos agregar nuestra llave privada (id_rsa) al computador, para eso ejecutamos:</p>
+  <code>
+    <li>ssh-add id_rsa</li>
+  </code>
+  <p>Si todo sale bien, debe aparecer 'Identity added ({{'<'}}correo{{'>'}})</p>
+  <p>Ahora hay que agregar la llave publica (id_rsa.pub) a github, en el siguiente video te explico como hacerlo.</p>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PrAyRy0xGZU" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>

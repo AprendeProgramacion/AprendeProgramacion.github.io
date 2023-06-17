@@ -59,3 +59,8 @@ code li.i-6 {
 code li.i-7 {
   margin-left: 280px;
 }
+
+code li span.comment {
+  color: #c3c3c393;
+  font-family: monospace;
+}
