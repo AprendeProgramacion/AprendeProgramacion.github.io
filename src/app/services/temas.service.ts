@@ -108,6 +108,10 @@ export class TemasService {
         "nombre": "Diferencia entre Versiones",
         "link": "/aprende/git/diferencia-entre-versiones"
       },
+      {
+        "nombre": "Ramas",
+        "link": "/aprende/git/ramas"
+      },
     ],
   }
   constructor() {

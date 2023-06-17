@@ -1,0 +1,50 @@
+<section class="tema">
+  <p>Pensemos el historial de git como una linea de tiempo, cambio tras cambio podemos notarlo. Pero git nos da la
+    posibilidad de separarlo.</p>
+  <p>Entramos a un concepto nuevo, las 'ramas' nos permiten separarnos de la linea de tiempo principal para trabajar de
+    manera aislada. Esto nos permite hacer cambios sin afectar el historial principal (normalmente conocido como area de
+    produccion) para que, si nos equivocamos, podemos estar seguros que el area de producción está a salvo.</p>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/U-IEMuycl1w" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+  <br>
+  <h4>Crear Ramas</h4>
+  <p>Para crear nuestra rama ejecutamos:</p>
+  <code>
+    <li>git branch {{'<'}}rama{{'>'}}</li>
+  </code>
+  <p>Podemos ver las ramas que tenemos con:</p>
+  <code>
+    <li>git branch</li>
+  </code>
+  <p>Aparecen todas las ramas locales. Podemos identificar la rama en la que nos encontramos porque tiene un asterisco
+    (*).</p>
+
+  <p>Para movernos de una rama a otra podemos ejecutar:</p>
+  <code>
+    <li>git checkout {{'<'}}rama a movernos{{'>'}}</li>
+  </code>
+
+  <p>Podemos cambiar el nombre de la rama en la que estamos, usando:</p>
+  <code>
+    <li>git branch -M {{'<'}}nuevo nombre{{'>'}}</li>
+  </code>
+  <p>Si queremos fusionar dos ramas, debemos movernos a la rama que va a recibir los cambios, luego ejecutar:</p>
+  <code>
+    <li>git merge {{'<'}}rama{{'>'}}</li>
+  </code>
+  <p>Hay que especificar la rama que queremos fusionar.</p>
+  <p>Para ver los logs mas organizados cuando trabajamos con ramas podemos usar una version modificada de 'git log':</p>
+  <code>
+    <li>git log --oneline --graph --decorate</li>
+  </code>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WPyVcYaIQ3E" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>

@@ -39,6 +39,7 @@ import { CrearRepoComponent } from "./components/temas/git/crear-repo/crear-repo
 import { ComandosBasicosGitComponent } from "./components/temas/git/comandos-basicos-git/comandos-basicos-git.component";
 import { ViajeTiempoComponent } from "./components/temas/git/viaje-tiempo/viaje-tiempo.component";
 import { DiferenciasEntreVersionesComponent } from "./components/temas/git/diferencias-entre-versiones/diferencias-entre-versiones.component";
+import { RamasGitComponent } from "./components/temas/git/ramas-git/ramas-git.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -79,6 +80,7 @@ const appRoutes:Routes = [
         { path: 'comandos-basicos', component: ComandosBasicosGitComponent },
         { path: 'viaje-en-el-tiempo', component: ViajeTiempoComponent },
         { path: 'diferencia-entre-versiones', component: DiferenciasEntreVersionesComponent },
+        { path: 'ramas', component: RamasGitComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }
