@@ -104,6 +104,10 @@ export class TemasService {
         "nombre": "Viajes en el Tiempo",
         "link": "/aprende/git/viaje-en-el-tiempo"
       },
+      {
+        "nombre": "Diferencia entre Versiones",
+        "link": "/aprende/git/diferencia-entre-versiones"
+      },
     ],
   }
   constructor() {

@@ -1,0 +1,18 @@
+<section class="tema">
+  <p>Cuando tenemos un historial en git, podemos ver los cambios que se hicieron entre dos versiones. Es util para saber
+    que lineas se modificaron en caso de estar haciendo revision de codigo.</p>
+  <p>Para ver la diferencia, primero usamos 'git log' para obtener el hash de las dos versiones que voy a comparar.</p>
+  <p>Posteriormente, ejecutamos:</p>
+  <code>
+    <li>git diff {{'<'}}hash 1{{'>'}} {{'<'}}hash 2{{'>'}}</li>
+  </code>
+  <p>El 'hash 1' normalmente debe ser del commit mas antiguo, mientras que el 'hash 2' el mas reciente. Esto debido a la
+    manera como git muestra la informacion, ya que el 'hash 1' lo va a mostrar como si se estuviera eliminando (en
+    rojo), mientras que el 'hash 2' como si se estuviera agregando (en verde).</p>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iTBbNcTeyuA" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>
