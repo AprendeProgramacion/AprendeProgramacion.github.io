@@ -1,8 +1,8 @@
-<aside id="temas">
+<aside id="temas" [style.position]="asidePos">
   <section id="basics">
     <button class="titulo-tema" (click)="toggle()">Contenido</button>
-    <ul [class]="view">
-      <li *ngFor="let i of links"><a [routerLink]="[i.link]"><span>{{i.nombre}}</span></a></li>
+    <ul id="list" [class]="view">
+      <li *ngFor="let i of links"><a (click)="setCurrent()" [routerLink]="[i.link]"><span>{{i.nombre}}</span></a></li>
     </ul>
   </section>
 </aside>
