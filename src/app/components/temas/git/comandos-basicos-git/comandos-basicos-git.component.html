@@ -1,0 +1,50 @@
+<section class="tema">
+  <p>Una vez iniciado el repositorio, podemos empezar a guardar cambios. Esto podríamos hacerlo mediante interfaz
+    grafica, pero como git fue creado para trabajar con linea de comandos, si usamos una GUI no tendremos todas las
+    funcionalidades que nos ofrece.</p>
+  <br>
+  <h4>Ver estado del proyecto</h4>
+  <p>Ya hicimos los cambios en nuestro proyecto, ahora hay que guardarlos. Pero antes de eso tenemos que mirar que
+    archivo o archivos han sido agregados, modificados o eliminados. Para eso debemos usar el comando:</p>
+  <code>
+    <li>git status</li>
+  </code>
+  <p>Este comando muestra el estado de los archivos, que pueden ser 'Untracked', 'Modified' y 'Staged'.</p>
+  <br>
+  <h4>Agregar cambios a staging</h4>
+  <p>Si queremos guardar un archivo que haya sido modificado o recien creado, primero tenemos que agregarlo al area de
+    staging, para ello usamos:</p>
+  <code>
+    <li>git add {{'<'}}archivo 1{{'>'}} {{'<'}}archivo 2{{'>'}} ...</li>
+  </code>
+  <p>Este comando nos permite agregar los archivos que le especifiquemos, sin embargo podemos ahorrarnos el escribir
+    muchos archivos si solo queremos agregarlos todos. Para esto usamos:</p>
+  <code>
+    <li>git add .</li>
+  </code>
+  <p>Recordemos que el punto nos indica que seleccionamos todo en el directorio en el que nos encontramos.</p>
+  <br>
+  <h4>Guardar cambios como una version</h4>
+  <p>cuando ejecutamos 'git add', estamos agregando archivos a un lugar temporal, no los estamos guardando en la base de
+    datos.</p>
+  <p>Cuando todos los archivos que queremos guardar se encuentran en staging, podemos usar:</p>
+  <code>
+    <li>git commit -m {{'"<'}}mensaje{{'>"'}}</li>
+  </code>
+  <p>Este comando guarda todo lo que teniamos en staging como una nueva version, para que podamos acceder a ella en caso
+    de necesitarlo.</p>
+  <p>El argumento '-m' indica que a continuacion vamos a introducir un mensaje, que debe ir entre comillas dobles
+    ({{'"'}}). Si este no se indica, git abrirá vim y solicitará el mensaje.</p>
+  <br>
+  <h4>Ver lista de versiones</h4>
+  <p>Podemos ver una lista con todos los commits que se han hecho a modo de historial con el comando:</p>
+  <code>
+    <li>git log</li>
+  </code>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lGOaWNiITkg" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</section>

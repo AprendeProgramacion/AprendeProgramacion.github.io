@@ -96,6 +96,10 @@ export class TemasService {
         "nombre": "Crear Repositorio",
         "link": "/aprende/git/crear-repositorio"
       },
+      {
+        "nombre": "Comandos Basicos",
+        "link": "/aprende/git/comandos-basicos"
+      },
     ],
   }
   constructor() {
