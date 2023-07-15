@@ -43,6 +43,7 @@ import { RamasGitComponent } from "./components/temas/git/ramas-git/ramas-git.co
 import { SshGithubComponent } from "./components/temas/git/ssh-github/ssh-github.component";
 import { IntroGhComponent } from "./components/temas/git/intro-gh/intro-gh.component";
 import { PrimerosPasosGHComponent } from "./components/temas/git/primeros-pasos-gh/primeros-pasos-gh.component";
+import { TrabajoColaborativoComponent } from "./components/temas/git/trabajo-colaborativo/trabajo-colaborativo.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -87,6 +88,7 @@ const appRoutes:Routes = [
         { path: 'ssh-github', component: SshGithubComponent },
         { path: 'intro-github', component: IntroGhComponent },
         { path: 'primeros-pasos-github', component: PrimerosPasosGHComponent },
+        { path: 'trabajo-colaborativo', component: TrabajoColaborativoComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }

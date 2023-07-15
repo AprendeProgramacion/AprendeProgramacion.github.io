@@ -124,6 +124,10 @@ export class TemasService {
         "nombre": "Primeros Pasos GitHub",
         "link": "/aprende/git/primeros-pasos-github"
       },
+      {
+        "nombre": "Trabajo Colaborativo",
+        "link": "/aprende/git/trabajo-colaborativo"
+      },
     ],
   }
   constructor() {

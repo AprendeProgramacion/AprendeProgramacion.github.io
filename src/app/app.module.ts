@@ -57,6 +57,7 @@ import { RamasGitComponent } from './components/temas/git/ramas-git/ramas-git.co
 import { SshGithubComponent } from './components/temas/git/ssh-github/ssh-github.component';
 import { IntroGhComponent } from './components/temas/git/intro-gh/intro-gh.component';
 import { PrimerosPasosGHComponent } from './components/temas/git/primeros-pasos-gh/primeros-pasos-gh.component';
+import { TrabajoColaborativoComponent } from './components/temas/git/trabajo-colaborativo/trabajo-colaborativo.component';
 
 @NgModule({
   declarations: [
@@ -114,7 +115,8 @@ import { PrimerosPasosGHComponent } from './components/temas/git/primeros-pasos-
     RamasGitComponent,
     SshGithubComponent,
     IntroGhComponent,
-    PrimerosPasosGHComponent
+    PrimerosPasosGHComponent,
+    TrabajoColaborativoComponent
   ],
   imports: [
     BrowserModule,
