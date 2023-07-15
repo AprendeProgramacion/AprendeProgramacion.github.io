@@ -120,6 +120,10 @@ export class TemasService {
         "nombre": "Introduccion GitHub",
         "link": "/aprende/git/intro-github"
       },
+      {
+        "nombre": "Primeros Pasos GitHub",
+        "link": "/aprende/git/primeros-pasos-github"
+      },
     ],
   }
   constructor() {

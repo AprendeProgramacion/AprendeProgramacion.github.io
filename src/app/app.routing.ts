@@ -42,6 +42,7 @@ import { DiferenciasEntreVersionesComponent } from "./components/temas/git/difer
 import { RamasGitComponent } from "./components/temas/git/ramas-git/ramas-git.component";
 import { SshGithubComponent } from "./components/temas/git/ssh-github/ssh-github.component";
 import { IntroGhComponent } from "./components/temas/git/intro-gh/intro-gh.component";
+import { PrimerosPasosGHComponent } from "./components/temas/git/primeros-pasos-gh/primeros-pasos-gh.component";
 
 const appRoutes:Routes = [
     { path: '', component: ContenidoInicioComponent },
@@ -85,6 +86,7 @@ const appRoutes:Routes = [
         { path: 'ramas', component: RamasGitComponent },
         { path: 'ssh-github', component: SshGithubComponent },
         { path: 'intro-github', component: IntroGhComponent },
+        { path: 'primeros-pasos-github', component: PrimerosPasosGHComponent },
         { path: '**', component: ErrorComponent },
       ]},
       { path: '**', component: ErrorComponent }

@@ -1,0 +1,24 @@
+<section class="tema">
+  <h3>Primeros pasos en GitHub</h3>
+  <p>Cuando hacemos un cambio en el repositorio con Git, lo estamos guardando en local, es decir, nuestro computador. Pero ¿que sucede si despues queremos publicar esos cambios?</p>
+  <p>Para eso existe el comando 'push' que nos permite subir el historial de una rama al repositorio remoto (GitHub).</p>
+  <p>Para usar el comando, primero debemos tener el repositorio local vinculado al repositorio en GitHub.</p>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/J8BgGJ9AmKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <code>
+    <li>git remote add {{'<'}}nuevo nombre{{'>'}} {{'<'}}URL{{'>'}}</li>
+  </code>
+  <p>Una vez vinculado el repositorio local y remoto, cuando hagamos un nuevo commit, si queremos enviar los cambios, basta con ejecutar:</p>
+  <code>
+    <li>git push {{'<'}}nombre remoto{{'>'}} {{'<'}}nombre rama{{'>'}}</li>
+  </code>
+  <p>El nombre de remoto es el nombre que le pusimos al repositorio cuando agregamos la url para vincularlo con GitHub. Por lo general es 'origin'.</p>
+  <p>El nombre de la rama debe ser exactamente igual a la rama en la que te encuentras, puedes ver el nombre usando:</p>
+  <code>
+    <li>git branch</li>
+  </code>
+  <div class="video-complete">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rqz4OFXVWEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</section>

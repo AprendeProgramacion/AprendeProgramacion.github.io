@@ -56,6 +56,7 @@ import { DiferenciasEntreVersionesComponent } from './components/temas/git/difer
 import { RamasGitComponent } from './components/temas/git/ramas-git/ramas-git.component';
 import { SshGithubComponent } from './components/temas/git/ssh-github/ssh-github.component';
 import { IntroGhComponent } from './components/temas/git/intro-gh/intro-gh.component';
+import { PrimerosPasosGHComponent } from './components/temas/git/primeros-pasos-gh/primeros-pasos-gh.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +113,8 @@ import { IntroGhComponent } from './components/temas/git/intro-gh/intro-gh.compo
     DiferenciasEntreVersionesComponent,
     RamasGitComponent,
     SshGithubComponent,
-    IntroGhComponent
+    IntroGhComponent,
+    PrimerosPasosGHComponent
   ],
   imports: [
     BrowserModule,
