@@ -116,6 +116,10 @@ export class TemasService {
         "nombre": "SSH GitHub",
         "link": "/aprende/git/ssh-github"
       },
+      {
+        "nombre": "Introduccion GitHub",
+        "link": "/aprende/git/intro-github"
+      },
     ],
   }
   constructor() {

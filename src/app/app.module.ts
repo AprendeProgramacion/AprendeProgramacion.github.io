@@ -55,6 +55,7 @@ import { ViajeTiempoComponent } from './components/temas/git/viaje-tiempo/viaje-
 import { DiferenciasEntreVersionesComponent } from './components/temas/git/diferencias-entre-versiones/diferencias-entre-versiones.component';
 import { RamasGitComponent } from './components/temas/git/ramas-git/ramas-git.component';
 import { SshGithubComponent } from './components/temas/git/ssh-github/ssh-github.component';
+import { IntroGhComponent } from './components/temas/git/intro-gh/intro-gh.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import { SshGithubComponent } from './components/temas/git/ssh-github/ssh-github
     ViajeTiempoComponent,
     DiferenciasEntreVersionesComponent,
     RamasGitComponent,
-    SshGithubComponent
+    SshGithubComponent,
+    IntroGhComponent
   ],
   imports: [
     BrowserModule,
