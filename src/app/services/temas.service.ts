@@ -128,6 +128,10 @@ export class TemasService {
         "nombre": "Trabajo Colaborativo",
         "link": "/aprende/git/trabajo-colaborativo"
       },
+      {
+        "nombre": "Pull Requests",
+        "link": "/aprende/git/pull-requests"
+      },
     ],
   }
   constructor() {

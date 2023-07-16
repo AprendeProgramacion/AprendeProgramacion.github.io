@@ -58,6 +58,7 @@ import { SshGithubComponent } from './components/temas/git/ssh-github/ssh-github
 import { IntroGhComponent } from './components/temas/git/intro-gh/intro-gh.component';
 import { PrimerosPasosGHComponent } from './components/temas/git/primeros-pasos-gh/primeros-pasos-gh.component';
 import { TrabajoColaborativoComponent } from './components/temas/git/trabajo-colaborativo/trabajo-colaborativo.component';
+import { PullRequestsComponent } from './components/temas/git/pull-requests/pull-requests.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +117,8 @@ import { TrabajoColaborativoComponent } from './components/temas/git/trabajo-col
     SshGithubComponent,
     IntroGhComponent,
     PrimerosPasosGHComponent,
-    TrabajoColaborativoComponent
+    TrabajoColaborativoComponent,
+    PullRequestsComponent
   ],
   imports: [
     BrowserModule,
