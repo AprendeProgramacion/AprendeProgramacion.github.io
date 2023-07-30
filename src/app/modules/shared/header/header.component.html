@@ -1,6 +1,6 @@
 <header id="header">
   <div id="center" class="center width-70">
-    <a [routerLink]="['/']">
+    <a [routerLink]="['/']"(click)="scrollTop()">
       <div id="logo">
         <img src="assets/img/ap-logo.png" alt="logo">
         <span class="logo-text">Aprende<strong>Programación</strong></span>
@@ -8,10 +8,10 @@
     </a>
     <nav id="menu" class="show-header">
       <ul>
-        <li><a [routerLink]="['/']">Inicio</a></li>
-        <li><a [routerLink]="['/aprende']">Aprende</a></li>
-        <li><a [routerLink]="['/retos']">Retos</a></li>
-        <li><a [routerLink]="['/about']">Acerca de</a></li>
+        <li><a [routerLink]="['/']"(click)="scrollTop()">Inicio</a></li>
+        <li><a [routerLink]="['/aprende']"(click)="scrollTop()">Aprende</a></li>
+        <li><a [routerLink]="['/retos']"(click)="scrollTop()">Retos</a></li>
+        <li><a [routerLink]="['/about']"(click)="scrollTop()">Acerca de</a></li>
       </ul>
     </nav>
   </div>

@@ -98,4 +98,7 @@ export class AsideMenuComponent {
       this.show();
     }
   }
+  scrollTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

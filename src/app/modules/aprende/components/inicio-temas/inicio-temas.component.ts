@@ -12,4 +12,7 @@ export class InicioTemasComponent {
   ngOnInit(){
     setTimeout(() => this.txt.text.emit(this.title),1);
   }
+  scrollTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

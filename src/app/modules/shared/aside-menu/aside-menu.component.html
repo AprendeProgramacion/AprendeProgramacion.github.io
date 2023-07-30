@@ -2,7 +2,7 @@
   <section id="basics">
     <button class="titulo-menu" (click)="toggle()">Contenido</button>
     <ul id="list" [class]="view">
-      <li *ngFor="let i of links"><a (click)="setCurrent()" [routerLink]="[i.link]"><span>{{i.nombre}}</span></a></li>
+      <li *ngFor="let i of links"><a (click)="setCurrent()" (click)="scrollTop()" [routerLink]="[i.link]"><span>{{i.nombre}}</span></a></li>
     </ul>
   </section>
 </aside>

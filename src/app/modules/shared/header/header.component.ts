@@ -58,4 +58,7 @@ export class HeaderComponent {
       this.windowScroll=window.scrollY;
     }
   }
+  scrollTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
