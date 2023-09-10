@@ -1,14 +1,5 @@
 <section id="cursos">
-  <div [routerLink]="['/aprende/antes-de-iniciar']" (click)="scrollTop()">
-    <img src="assets/img/courses/ADI_Course.jpg">
-    <span>Antes de Iniciar</span>
-  </div>
-  <div [routerLink]="['/aprende/fundamentos']" (click)="scrollTop()">
-    <img src="assets/img/courses/Fundamentos_Course.jpg">
-    <span>Fundamentos</span>
-  </div>
-  <div [routerLink]="['/aprende/git']" (click)="scrollTop()">
-    <img src="assets/img/courses/Git_Course.jpg">
-    <span>Git</span>
-  </div>
+  <app-course-select [name]="'Antes de Iniciar'" [imgPath]="'assets/img/courses/ADI_Course.jpg'" [clickPath]="'/aprende/antes-de-iniciar'"></app-course-select>
+  <app-course-select [name]="'Fundamentos'" [imgPath]="'assets/img/courses/Fundamentos_Course.jpg'" [clickPath]="'/aprende/fundamentos'"></app-course-select>
+  <app-course-select [name]="'Git'" [imgPath]="'assets/img/courses/Git_Course.jpg'" [clickPath]="'/aprende/git'"></app-course-select>
 </section>

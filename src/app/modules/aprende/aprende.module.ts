@@ -8,6 +8,7 @@ import { ContenidoTemasComponent } from './views/contenido-temas/contenido-temas
 import { AntesDeIniciarModule } from './submodules/antes-de-iniciar/antes-de-iniciar.module';
 import { FundamentosModule } from './submodules/fundamentos/fundamentos.module';
 import { GitModule } from './submodules/git/git.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GitModule } from './submodules/git/git.module';
     RouterModule,
     AntesDeIniciarModule,
     FundamentosModule,
-    GitModule
+    GitModule,
+    SharedModule
   ],
 })
 export class AprendeModule { }

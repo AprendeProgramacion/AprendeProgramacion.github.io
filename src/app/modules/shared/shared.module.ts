@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TitleComponent } from './title/title.component';
 import { RouterModule } from '@angular/router';
 import { AsideMenuComponent } from './aside-menu/aside-menu.component';
+import { CourseSelectComponent } from './course-select/course-select.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AsideMenuComponent } from './aside-menu/aside-menu.component';
     HeaderComponent,
     FooterComponent,
     TitleComponent,
-    AsideMenuComponent
+    AsideMenuComponent,
+    CourseSelectComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { AsideMenuComponent } from './aside-menu/aside-menu.component';
     FooterComponent,
     TitleComponent,
     ErrorComponent,
-    AsideMenuComponent
+    AsideMenuComponent,
+    CourseSelectComponent
   ]
 })
 export class SharedModule { }
