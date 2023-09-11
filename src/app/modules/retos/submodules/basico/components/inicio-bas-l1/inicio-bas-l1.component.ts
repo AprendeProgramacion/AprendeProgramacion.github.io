@@ -1,59 +1,39 @@
 import { Component } from '@angular/core';
-import { SacarModuloService } from 'src/app/services/basico/l1/sacar-modulo.service';
-import { SumarDosNumsService } from 'src/app/services/basico/l1/sumar-dos-nums.service';
-import { SacarCuadradoService } from 'src/app/services/basico/l1/sacar-cuadrado.service';
-import { SacarAreaCuadradoService } from 'src/app/services/basico/l1/sacar-area-cuadrado.service';
-import { SacarAreaCilindroService } from 'src/app/services/basico/l1/sacar-area-cilindro.service';
-import { SacarHipotenusaService } from 'src/app/services/basico/l1/sacar-hipotenusa.service';
 import { TitleTextService } from 'src/app/services/title/title-text.service';
-
+import { ModalService } from 'src/app/services/modal.service';
+import { ContentService } from 'src/app/modules/retos/services/content.service';
 @Component({
   selector: 'app-inicio-bas-l1',
   templateUrl: './inicio-bas-l1.component.html',
   styleUrls: ['./inicio-bas-l1.component.css']
 })
 export class InicioBasL1Component {
-  sumar:boolean = false;
-  sacar_mod:boolean = false;
-  sacar_cua:boolean = false;
-  sacar_area_cua:boolean = false;
-  sacar_area_cil:boolean = false;
-  sacar_hipo:boolean = false;
+  modalInfo:any = {
+    "title": "",
+    "description": "",
+    "solutionImg": "",
+    "solutionAlt": "",
+    "solutionDesc1": "",
+    "solutionDesc2": ""
+  }
+  modalView: boolean = false;
   title:string = "Retos Basicos Nivel 1";
   constructor(
+    private content: ContentService,
     private txt:TitleTextService,
-    private sumarNums: SumarDosNumsService,
-    private sacarMod: SacarModuloService,
-    private sacarCua: SacarCuadradoService,
-    private sacarAreaCua: SacarAreaCuadradoService,
-    private sacarAreaCil: SacarAreaCilindroService,
-    private sacarHipo: SacarHipotenusaService
+    private modal:ModalService
   ){}
   ngOnInit() {
     setTimeout(() => this.txt.text.emit(this.title),1);
-    this.sumarNums.sumarNums.subscribe(s => this.sumar=s);
-    this.sacarMod.sacarModulo.subscribe(s => this.sacar_mod=s);
-    this.sacarCua.sacarCuadrado.subscribe(s => this.sacar_cua=s);
-    this.sacarAreaCua.sacarAreaCuadrado.subscribe(s => this.sacar_area_cua=s);
-    this.sacarAreaCil.sacarAreaCil.subscribe(s => this.sacar_area_cil=s);
-    this.sacarHipo.sacarHipotenusa.subscribe(s => this.sacar_hipo =s);
+    this.modal.view.subscribe(s => this.modalView = s);
   }
-  openSumar() {
-    this.sumar = true;
-  }
-  openSacarMod(){
-    this.sacar_mod = true;
-  }
-  openSacarCua() {
-    this.sacar_cua = true;
-  }
-  openSacarAreaCua(){
-    this.sacar_area_cua = true;
-  }
-  openSacarAreaCil(){
-    this.sacar_area_cil = true;
-  }
-  openSacarHipo(){
-    this.sacar_hipo = true;
+  openModal(level:string,name:string) {
+    this.modalInfo.title = (this.content.basico)[level][name].title;
+    this.modalInfo.description = (this.content.basico)[level][name].description;
+    this.modalInfo.solutionImg = (this.content.basico)[level][name].solutionImg;
+    this.modalInfo.solutionAlt = (this.content.basico)[level][name].solutionAlt;
+    this.modalInfo.solutionDesc1 = (this.content.basico)[level][name].solutionDesc1;
+    this.modalInfo.solutionDesc2 = (this.content.basico)[level][name].solutionDesc2;
+    this.modalView = true;
   }
 }

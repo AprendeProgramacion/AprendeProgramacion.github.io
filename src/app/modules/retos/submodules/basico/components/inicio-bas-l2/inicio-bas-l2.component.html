@@ -1,21 +1,17 @@
 <section class="retos">
   <ul>
     <li>
-      <a (click)="openSacarDef()">
+      <a (click)="openModal('l2','definitiva')">
         <h4>Calcular definitiva</h4>
         <span>Intermedio</span>
       </a>
     </li>
     <li>
-      <a (click)="openEvaluarDia()">
+      <a (click)="openModal('l2','evalDia')">
         <h4>Evaluar dia de la semana</h4>
         <span>Intermedio</span>
       </a>
     </li>
-    <!-- <li>
-      <a href=""></a>
-    </li> -->
   </ul>
-  <app-sacar-def *ngIf="sacar_def"></app-sacar-def>
-  <app-evaluar-dia *ngIf="eval_dia"></app-evaluar-dia>
+  <app-modal *ngIf="modalView" [data]="modalInfo"></app-modal>
 </section>

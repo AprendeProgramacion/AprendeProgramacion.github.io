@@ -3,9 +3,9 @@ import { EventEmitter, Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class SumarDosNumsService {
-  sumarNums: EventEmitter<boolean>;
+export class ModalService {
+  view: EventEmitter<boolean>;
   constructor() {
-    this.sumarNums = new EventEmitter();
+    this.view = new EventEmitter();
   }
 }

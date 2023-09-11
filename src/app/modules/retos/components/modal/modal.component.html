@@ -1,0 +1,18 @@
+<div class="reto">
+  <div class="content">
+    <div class="title">
+      <h3>{{data.title}}</h3>
+      <button class="btn-cerrar" (click)="close()"><img src="assets/img/icons/close.png" alt=""></button>
+    </div>
+    <hr>
+    <div class="description">
+      <p [innerHTML]="data.description"></p>
+    </div>
+    <button class="solucion" (click)="solutionToggle()">SOLUCION</button>
+    <p *ngIf="solution" [innerHTML]="data.solutionDesc1"></p>
+    <div class="image-complete" *ngIf="solution">
+      <img [src]="data.solutionImg" [alt]="data.solutionAlt">
+    </div>
+    <p *ngIf="solution" [innerHTML]="data.solutionDesc2"></p>
+  </div>
+</div>

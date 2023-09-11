@@ -1,46 +1,41 @@
 <section class="retos">
   <ul>
     <li>
-      <a (click)="openSumar()">
+      <a (click)="openModal('l1','suma')">
         <h4>Sumar dos Numeros</h4>
         <span>Facil</span>
       </a>
     </li>
     <li>
-      <a (click)="openSacarMod()">
+      <a (click)="openModal('l1','residuo')">
         <h4>Calcular residuo</h4>
         <span>Facil</span>
       </a>
     </li>
     <li>
-      <a (click)="openSacarCua()">
+      <a (click)="openModal('l1','cuadrado')">
         <h4>Calcular cuadrado</h4>
         <span>Facil</span>
       </a>
     </li>
     <li>
-      <a (click)="openSacarAreaCua()">
+      <a (click)="openModal('l1', 'areaCuadrado')">
         <h4>Calcular area y perimetro de un cuadrado</h4>
         <span>Facil</span>
       </a>
     </li>
     <li>
-      <a (click)="openSacarAreaCil()">
+      <a (click)="openModal('l1','areaCilindro')">
         <h4>Calcular el area de un cilindro</h4>
         <span>Facil</span>
       </a>
     </li>
     <li>
-      <a (click)="openSacarHipo()">
+      <a (click)="openModal('l1','hipotenusa')">
         <h4>Calcular la hipotenusa</h4>
         <span>Facil</span>
       </a>
     </li>
   </ul>
-  <app-sumar-numeros-variables *ngIf="sumar"></app-sumar-numeros-variables>
-  <app-sacar-modulo *ngIf="sacar_mod"></app-sacar-modulo>
-  <app-sacar-cuadrado *ngIf="sacar_cua"></app-sacar-cuadrado>
-  <app-sacar-area-cuadrado *ngIf="sacar_area_cua"></app-sacar-area-cuadrado>
-  <app-sacar-area-cilindro *ngIf="sacar_area_cil"></app-sacar-area-cilindro>
-  <app-sacar-hipotenusa *ngIf="sacar_hipo"></app-sacar-hipotenusa>
+  <app-modal *ngIf="modalView" [data]="modalInfo"></app-modal>
 </section>
