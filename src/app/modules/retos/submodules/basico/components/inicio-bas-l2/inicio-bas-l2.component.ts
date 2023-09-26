@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { ContentService } from 'src/app/modules/retos/services/content.service';
-import { EvaluarDiaService } from 'src/app/services/basico/l2/evaluar-dia.service';
-import { SacarDefinitivaService } from 'src/app/services/basico/l2/sacar-definitiva.service';
 import { ModalService } from 'src/app/services/modal.service';
 import { TitleTextService } from 'src/app/services/title/title-text.service';
 
